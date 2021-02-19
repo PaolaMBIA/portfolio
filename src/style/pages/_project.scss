@@ -1,71 +1,11 @@
 .project {
   position: absolute;
-  height: 100vh;
-  width: 100vw;
+  //top: 80px;
+ // height: 100vh;
+  width: 100%;
 
-  &:after {
-    content: "";
-    height: 340px;
-    width: 340px;
-    border: 1px solid $color-2;
-    border-radius: 50%;
-    position: absolute;
-    bottom: -200px;
-    left: -80px;
-    z-index: -1;
+  z-index: -1;
 
-    @media screen and (max-width: 810px){
-      height: 200px;
-      width: 200px;
-      bottom: -110px;
-    }
-    @media screen and (max-width: 430px){
-      // display: none;
-      left : -500px;
-    }
-  }
-
-  .navigation {
-    top: 5px;
-    left: 60%;
-    font-size: 1.1rem;
-    line-height: 20px;
-    transform: translateY(-100%);
-    animation: navProject 1s ease forwards;
-
-    @media screen and (max-width: 650px){
-      left: 70%;
-    }
-  
-    @keyframes navProject {
-      to {
-        transform: translateY(0);
-      }
-    }
-
-    &:before {
-      left: -120px;
-      top: -250px;
-    }
-
-    .nav-projects {
-      transform: translateX(67px);
-      padding: 0 20px;
-    }
-  }
-  .logo {
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    transform: scale(0);
-    animation: logoProject 2s ease forwards;
-  
-    @keyframes logoProject {
-      to {
-        transform: scale(1);
-      }
-    }
-  }
   .project-main {
     margin: 8rem 1rem 0;
     display: grid;
@@ -95,10 +35,10 @@
       }
 
       h1 {
-        font-size: 3rem;
+        font-size: 1.5rem;
         margin-bottom: 12px;
         font-family: $font-2;
-        color: $color-2;
+        color: $color-4;
         transform: scaleX(0);
         animation: transformTitle 1.5s ease forwards;
         transform-origin: 150%;
@@ -132,7 +72,7 @@
           content: "";
           height: 340px;
           width: 340px;
-          background: $color-3;
+          background: $color-8;
           border-radius: 50%;
           position: absolute;
           top: -28px;
@@ -258,22 +198,36 @@
     position: absolute;
     height: 400px;
     width: 400px;
-    background: $color-3;
-    border-radius: 50%;
+    //background: whitesmoke;
+    //border-radius: 50%;
     z-index: -1;
-    animation: circleAnim 16s infinite alternate;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    //animation: circleAnim 16s infinite alternate;
 
-    @keyframes circleAnim {
-      50% {
-        transform: scale(0.7);
-      }
-      100% {
-        transform: scale(1);
-      }
-    }
+    // @keyframes circleAnim {
+    //   50% {
+    //     transform: scale(0.7);
+    //   }
+    //   100% {
+    //     transform: scale(1);
+    //   }
+    // }
     
     @media screen and (max-width: 630px){
       display: none;
     }
+  }
+
+  .random-circle p{
+    //margin: 20px;
+    text-align: justify;
+    color: whitesmoke;
+    //align-self: center;
+  }
+
+  .languages{
+    color: whitesmoke;
   }
 }

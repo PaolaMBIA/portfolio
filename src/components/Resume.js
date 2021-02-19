@@ -18,10 +18,50 @@ const Resume = () => {
         })
     }
 
+    const animImage = () => {
+
+        let imgAni = document.querySelector('.myBlockResume img');
+        let imgAni2 = document.querySelector('.myBlockResume2 img');
+
+        imgAni.addEventListener('mouseover', (e) => {
+            imgAni.style.transform = `translate(15px)`
+        })
+
+        imgAni.addEventListener('mouseleave', () => {
+            imgAni.style.transform ='';
+        })
+
+        
+        imgAni2.addEventListener('mouseover', (e) => {
+            imgAni2.style.transform = `translate(-15px)`
+        })
+
+        imgAni2.addEventListener('mouseleave', () => {
+            imgAni2.style.transform ='';
+        })
+    }
+
     return (
         <div className="myResume">
-            <div className="myBlockResume">            
-                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+            <div className="myGlobalBlockResume">
+                <div className="myBlockResume">  
+                    <div className="myStory">
+                        <h4>Qui suis-je?</h4>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+                    </div>  
+                    <div onMouseOver={animImage}>
+                         <img  src="./assets/img/diplome.png" alt="diplome" />
+                    </div>     
+                </div>
+                <div className="myBlockResume2">            
+                    <div className="myStory">
+                        <h4>Ma passion?</h4>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+                    </div>
+                    <div onMouseOver={animImage}>
+                        <img style={{transform:"rotateY(180deg)"}} src="./assets/img/imag.jpeg" alt="diplome"/>
+                    </div> 
+                </div>
             </div>
             <div className="mySkills">
                 <h4>Mes compétences</h4>

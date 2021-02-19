@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../components/Footer';
 import Nav from '../components/Nav';
 
 
@@ -7,6 +8,7 @@ const Contact = () => {
         <div>
             <Nav/>
             contact
+            <Footer/>
         </div>
     )
 };

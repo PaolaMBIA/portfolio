@@ -29,23 +29,27 @@
         display: flex;
         flex-direction: column;
         align-self: center;
-        margin-left: 20px;
-
+        margin-left: 20%;
     }
 
     p, h3{
         color: whitesmoke;
     }
     h3{
-        font-size: 35px;
+        font-size: 55px;
         margin-bottom: 10px;
+        align-self: center;
+    }
+
+    .word {
+        position: absolute;
     }
 
     h2{
         align-self: center;
         margin-bottom: 20px;
         color: $color-8;
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .myResume{
@@ -60,27 +64,60 @@
         //opacity: 0.1;
     }
 
-    .myBlockResume{
+    .myself{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        width: 50%;
+    }
+
+    .myGlobalBlockResume{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .myBlockResume, .myBlockResume2{
+        display: flex;
+        ///flex-direction: column;
+        justify-content: space-between;
+        width: 800px;
         align-self: center;
+        //text-align: center;
        // border: 1px solid transparent;
-        margin: 10px;
-        //background: whitesmoke;
+        margin-top: 60px;
+        padding-bottom: 50px;
     }
 
-    .myBlockResume h4{
-        align-self: center;
-        font-size: 20px;
-        font-family: $font-2;
+    .myBlockResume2{
+        flex-direction: row-reverse;
     }
 
-    .myBlockResume span{
+    .myBlockResume .myStory, .myBlockResume2 .myStory{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .myBlockResume img, .myBlockResume2 img{
+        width: 200px;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 120px;
+        opacity: 0.8;
+        margin-top: 30px;
+        margin-left: 50px;
+        transition: 1.1s ease-out;
+        z-index: -1;
+    }
+    
+    .myBlockResume2 img{
+        margin-right: 50px;
+        margin-left: 0px;
+    }
+
+    .myBlockResume span, .myBlockResume2 span{
         text-align: justify;
         color: whitesmoke;
-        margin-right: 20px;
+        margin-top: 25px;
+        font-size: 20px;
+        line-height: 25px;
     }
 
     .mySkills{
@@ -91,29 +128,33 @@
         height: max-content;
     }
 
-    .mySkills h4{
-        color: #05745a;
-        align-self: center;
-        font-size: 30px;
+    .mySkills h4, .myBlockResume h4, .myBlockResume2 h4{
+        color: $color-7;
+        text-align: center;
+        font-size: 37px;
         font-family: $font-2;
     }
 
     .mySkills .mySkillsImage{
-        align-self: center;
-        width: 50%;
+        //align-self: center;
+       // width: 50%;
         //background-color: red;
         margin-top: 20px;
         padding: 30px;
         display: flex;
         flex-wrap: wrap;
-        //justify-content: center;
+        justify-content: center;
+    }
+
+    .mySkills .mySkillsImage div img{
+        width: 100px;
     }
 
     .mySkills .mySkillsImage div {
         width: 25%;
         margin: 20px;
         text-align: center;
-      transition: 1.1s ease-out;
+        transition: 1.1s ease-out;
     }
 
 }
