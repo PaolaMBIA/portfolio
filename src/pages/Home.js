@@ -31,8 +31,8 @@ const Home = () => {
       }
     
     return (
-        <motion.div>
-            <Nav />
+        <>
+            
             <motion.div
                         initial="initial"
                         animate="visible"
@@ -41,8 +41,8 @@ const Home = () => {
                         variants={variants}>
                 <Apropos/>
             </motion.div>
-            <Footer/>
-        </motion.div>
+            
+        </>
     )
 };
 

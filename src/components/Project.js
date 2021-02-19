@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import { projectsData } from "../data/projectsData";
 import { motion } from "framer-motion";
+import Nav from "./Nav";
+import Footer from "./Footer";
 
-const Project = (props) => {
-  const [currentProject] = useState(projectsData);
 
-  const project = currentProject[props.projectNumber];
+const Project = () => {
+  //const [currentProject] = useState(projectsData);
+
+  //const project = currentProject[props.projectNumber];
 
   // random background circle
   let right = -250 + "px";
@@ -50,48 +53,97 @@ const Project = (props) => {
   const transition = {
     ease: [.03,.87,.73,.9],
     duration: .6,
-  }
+    }
+
+    const container = {
+        hidden: { opacity: 1, scale: 0 },
+        visible: {
+          opacity: 1,
+          scale: 1,
+          transition: {
+            delayChildren: 0.3,
+            staggerChildren: 0.2
+          }
+        }
+      }
+        
+      const item = {
+        hidden: { y: 20, opacity: 0 },
+        visible: {
+          y: 0,
+          opacity: 1
+        }
+      }
 
   return (
-    <motion.div
-      className="project-main"
-      initial="initial"
-      animate="visible"
-      exit="exit"
-      transition={transition}
-      variants={variants}
-    >
-      <div className="project-content">
-        <h1>{project.title}</h1>
-        <p>{project.date}</p>
-        <ul className="languages">
-          {project.languages.map((item) => {
-            return <li key={item}>{item}</li>;
-          })}
-        </ul>
-      </div>
-      <motion.div 
-        className="img-content"
-        initial="initial"
-        animate="visible"
-        variants={imgAnim}
-        transition={{duration: 1.2}}
-      >
-        <div className="img-container hover">
-          <span>
-            <h3>{project.title}</h3>
-            <p>{project.infos}</p>
-          </span>
-          <img src={project.img} alt={project.title} className="img" />
-        </div>
-        <div className="button-container">
-          <a href={project.link} target="_blank" rel="noopener noreferrer" className="hover">
-            <span className="button">voir le site</span>
-          </a>
-        </div>
-      </motion.div>
-      <span className="random-circle" style={{ right, top }}><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></span>
-    </motion.div>
+      <>
+       
+        <motion.div 
+            className="content1"
+            initial="hidden"
+            animate="visible"
+            variants={container}
+            //transition={{duration: 1.2}}
+        >
+
+              <h2>Mes réalisations</h2>
+              <div
+                  className="img-content"
+              >
+                  <div className="myPosts">
+                      <div className="myFirstPosts">
+                            <motion.img
+                                variants={item}
+                                src="./assets/img/projet-1.PNG"
+                                alt="projet1"
+                              className="myImg1"                  
+                            /> 
+                            <motion.img
+                                variants={item}
+                                src="./assets/img/projet-3.PNG"
+                                alt="projet1"
+                                className="myImg2"
+                            />  
+                      </div>
+                      <div className="mySecondPosts">
+                            <motion.img
+                                variants={item}
+                                src="./assets/img/projet-2.jpg"
+                                alt="projet1"
+                                className="myImg3"
+                            /> 
+                          
+                      </div>
+                  </div>
+                  <div className="myPosts">
+                      <div className="myFirstPosts">
+                            <motion.img
+                                variants={item}
+                                src="./assets/img/projet-5.PNG"
+                                alt="projet1"
+                                className="myImg1"
+                            /> 
+                            <motion.img
+                                variants={item}
+                                src="./assets/img/projet-6.JPG"
+                                alt="projet1"
+                                className="myImg1"
+                            />
+                      </div>
+                      <div className="mySecondPosts">
+                            <motion.img
+                                variants={item}
+                                src="./assets/img/projet-4.jpeg"
+                                alt="projet1"
+                                className="myImg3"
+                            />
+                      </div>
+                  </div> 
+              </div>
+    
+          </motion.div>
+          
+    </>
   );
 };
 

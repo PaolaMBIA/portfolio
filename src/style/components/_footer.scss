@@ -3,10 +3,8 @@
     //height: 70px;
     margin-top: 1rem;
     padding: 1rem;
-    //position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    flex-shrink: 0;
+    //visibility: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -27,7 +25,7 @@
 
     span{
         font-weight: bold;
-        font-size: 25px;
+        font-size: 20px;
         margin-top: 10px;
     }
 }

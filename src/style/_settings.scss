@@ -21,6 +21,7 @@ $color-8: #05745a;
 $black: rgb(40, 40, 40);
 $red: rgb(253, 87, 87);
 
+
 * {
   margin: 0;
   padding: 0;
@@ -46,7 +47,7 @@ a:visited {
 }
 body {
   font-family: $font-1;
-  height: 50%;
+  height: 100%;
   background-color: $color-5;
   color: $black;
 
