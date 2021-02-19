@@ -103,69 +103,69 @@
     //     margin: 0 auto;
     //   }
     // }
-      .img-container {
-        border-radius: 5px;
-        box-shadow: 0px 2px 4px rgba(51, 51, 51, 0.26);
-        width: 600px;
-        height: 380px;
-        overflow: hidden;
-        position: relative;
+    //   .img-container {
+    //     border-radius: 5px;
+    //     box-shadow: 0px 2px 4px rgba(51, 51, 51, 0.26);
+    //     width: 600px;
+    //     height: 380px;
+    //     overflow: hidden;
+    //     position: relative;
 
-        @media screen and (max-width: 940px){
-          height: 300px;
-          width: 500px;
-        }
-        @media screen and (max-width: 540px){
-          height: 200px;
-          width: 370px;
-        }
-        @media screen and (max-width: 400px){
-          height: 150px;
-          width: 280px
-        }
+    //     @media screen and (max-width: 940px){
+    //       height: 300px;
+    //       width: 500px;
+    //     }
+    //     @media screen and (max-width: 540px){
+    //       height: 200px;
+    //       width: 370px;
+    //     }
+    //     @media screen and (max-width: 400px){
+    //       height: 150px;
+    //       width: 280px
+    //     }
 
-        &:hover span,
-        span:hover {
-          visibility: visible;
-          transform: translateY(0);
-        }
+    //     &:hover span,
+    //     span:hover {
+    //       visibility: visible;
+    //       transform: translateY(0);
+    //     }
 
-        img {
-          overflow: hidden;
-          object-fit: cover;
-          object-position: 0%;
-          width: 50%;
-          height: 50%;
-          position: absolute;
-          transition: 0.4s ease-out;
-          position: relative;
+    //     img {
+    //       overflow: hidden;
+    //       object-fit: cover;
+    //       object-position: 0%;
+    //       width: 50%;
+    //       height: 50%;
+    //       position: absolute;
+    //       transition: 0.4s ease-out;
+    //       position: relative;
 
-          &:hover,
-          span:hover img {
-            transform: scale(1.2);
-            filter: opacity(15%) contrast(150%);
-          }
-        }
-        span {
-          position: absolute;
-          bottom: 20px;
-          left: 0;
-          width: 100%;
-          padding: 1rem;
-          margin: 0 auto;
-          line-height: 34px;
-          font-size: 1.5rem;
-          visibility: hidden;
-          transition: 0.5s ease;
-          transform: translateY(200px);
+    //       &:hover,
+    //       span:hover img {
+    //         transform: scale(1.2);
+    //         filter: opacity(15%) contrast(150%);
+    //       }
+    //     }
+    //     span {
+    //       position: absolute;
+    //       bottom: 20px;
+    //       left: 0;
+    //       width: 100%;
+    //       padding: 1rem;
+    //       margin: 0 auto;
+    //       line-height: 34px;
+    //       font-size: 1.5rem;
+    //       visibility: hidden;
+    //       transition: 0.5s ease;
+    //       transform: translateY(200px);
 
-          h3 {
-            padding-bottom: 10px;
-            color: rgb(2, 121, 148);
-          }
-        }
+    //       h3 {
+    //         padding-bottom: 10px;
+    //         color: rgb(2, 121, 148);
+    //       }
+    //     }
       
-    }
+    // }
   }
 
   .img{
@@ -227,6 +227,37 @@
     //align-self: center;
   }
 
+  .img-container{
+    position: relative;
+    z-index: 0;
+  }
+
+  .img-container span{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    width: 400px;
+    visibility: hidden;
+    //background-color: $color-8;
+    //opacity: 0.6;
+    margin-top: 5px;
+    margin-left: 25px;
+    z-index: 1;
+  }
+
+  .img-container:hover span, span:hover{
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .img-container span p,.img-container span h3{
+    color: whitesmoke;
+    font-weight: bolder;
+    font-family: $font-2;
+    align-self: center;
+  }
 
   .content1{
     padding-top: 150px;
@@ -267,6 +298,11 @@
     width: 400px;
     border-radius:10px;
     margin-bottom:40px;
+  }
+
+  .img-container:hover .myImg1{
+   // transform: scale(1.2);
+    filter:opacity(15%) contrast(150%);
   }
   .myImg2{
     width: 400px;

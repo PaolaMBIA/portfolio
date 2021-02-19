@@ -6,9 +6,9 @@ import Nav from '../components/Nav';
 const Contact = () => {
     return (
         <div>
-            <Nav/>
+           
             contact
-            <Footer/>
+           
         </div>
     )
 };

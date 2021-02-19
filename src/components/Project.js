@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { projectsData } from "../data/projectsData";
 import { motion } from "framer-motion";
-import Nav from "./Nav";
-import Footer from "./Footer";
+import { useHistory } from 'react-router';
 
 
 const Project = () => {
@@ -11,6 +10,8 @@ const Project = () => {
   //const project = currentProject[props.projectNumber];
 
   // random background circle
+  const history = useHistory();
+
   let right = -250 + "px";
   let top = 0 + "px";
   //let size = "scale(" + (Math.random() + 0.7) + ")";
@@ -34,8 +35,8 @@ const Project = () => {
 
   // random img pop
   let plusMinus = Math.random() > 0.4 ? 1 : -1;
-  let imgX = Math.random() * 350 * plusMinus;
-  let imgY = Math.random() * 120 * plusMinus;
+  let imgX = Math.random() * 200 * plusMinus;
+  let imgY = Math.random() * 100 * plusMinus;
 
   const imgAnim = {
     initial: {
@@ -45,7 +46,84 @@ const Project = () => {
     },
     visible: { 
       opacity: 1,
-      x: 0,
+      x: 20,
+      y: 0,
+    }
+  }
+
+  const imgAnim1 = {
+    initial: {
+      opacity: 0,
+      x: imgX,
+      y: imgY,
+    },
+    visible: { 
+      opacity: 1,
+      x: 20,
+      y: 0,
+    }
+  }
+
+  const imgAnim2 = {
+    initial: {
+      opacity: 0,
+      x: -imgX,
+      y: imgY,
+    },
+    visible: { 
+      opacity: 1,
+      x: 20,
+      y: 0,
+    }
+  }
+
+  const imgAnim3 = {
+    initial: {
+      opacity: 0,
+      x: imgX,
+      y: -imgY,
+    },
+    visible: { 
+      opacity: 1,
+      x: 20,
+      y: 0,
+    }
+  }
+  const imgAnim4 = {
+    initial: {
+      opacity: 0,
+      x: -imgX,
+      y: -imgY,
+    },
+    visible: { 
+      opacity: 1,
+      x: 20,
+      y: 0,
+    }
+  }
+  const imgAnim5 = {
+    initial: {
+      opacity: 0,
+      x: imgX,
+      y: -imgY,
+    },
+    visible: { 
+      opacity: 1,
+      x: 20,
+      y: 0,
+    }
+  }
+
+
+  const imgAnim6 = {
+    initial: {
+      opacity: 0,
+      x: imgX,
+      y: imgY,
+    },
+    visible: { 
+      opacity: 1,
+      x: 20,
       y: 0,
     }
   }
@@ -61,8 +139,8 @@ const Project = () => {
           opacity: 1,
           scale: 1,
           transition: {
-            delayChildren: 0.3,
-            staggerChildren: 0.2
+            delayChildren: 1.5,
+            staggerChildren: 1.2
           }
         }
       }
@@ -74,15 +152,21 @@ const Project = () => {
           opacity: 1
         }
       }
+  
+  const mySpecifyProject = (id) => {
+    history.push(`projets/${id}`)
+  }
 
   return (
       <>
        
         <motion.div 
             className="content1"
-            initial="hidden"
+            initial="initial"
             animate="visible"
-            variants={container}
+            exit="exit"
+            transition={transition}
+            variants={variants}
             //transition={{duration: 1.2}}
         >
 
@@ -91,15 +175,28 @@ const Project = () => {
                   className="img-content"
               >
                   <div className="myPosts">
-                      <div className="myFirstPosts">
-                            <motion.img
-                                variants={item}
-                                src="./assets/img/projet-1.PNG"
-                                alt="projet1"
-                              className="myImg1"                  
+            <div className="myFirstPosts">
+              <div className="img-container" onClick={() => { mySpecifyProject(1) }}>
+              <span>
+            <h3>title</h3>
+            <p>infos</p>
+                </span>
+                <motion.img
+                variants={imgAnim1}
+                initial="initial"
+                animate="visible"
+                transition={{ duration: 1.2 }}
+                src="./assets/img/projet-1.PNG"
+                alt="projet1"
+                className="myImg1"
                             /> 
+              </div>
+
                             <motion.img
-                                variants={item}
+                                variants={imgAnim2}
+                                initial="initial"
+                                animate="visible"
+                                transition={{duration: 1.5}}
                                 src="./assets/img/projet-3.PNG"
                                 alt="projet1"
                                 className="myImg2"
@@ -107,7 +204,10 @@ const Project = () => {
                       </div>
                       <div className="mySecondPosts">
                             <motion.img
-                                variants={item}
+                                variants={imgAnim3}
+                                initial="initial"
+                                animate="visible"
+                                transition={{duration: 1.8}}
                                 src="./assets/img/projet-2.jpg"
                                 alt="projet1"
                                 className="myImg3"
@@ -118,13 +218,19 @@ const Project = () => {
                   <div className="myPosts">
                       <div className="myFirstPosts">
                             <motion.img
-                                variants={item}
+                                variants={imgAnim4}
+                                initial="initial"
+                                animate="visible"
+                                transition={{duration: 2.1}}
                                 src="./assets/img/projet-5.PNG"
                                 alt="projet1"
                                 className="myImg1"
                             /> 
                             <motion.img
-                                variants={item}
+                                variants={imgAnim5}
+                                initial="initial"
+                                animate="visible"
+                                transition={{duration: 2.4}}
                                 src="./assets/img/projet-6.JPG"
                                 alt="projet1"
                                 className="myImg1"
@@ -132,7 +238,10 @@ const Project = () => {
                       </div>
                       <div className="mySecondPosts">
                             <motion.img
-                                variants={item}
+                                variants={imgAnim6}
+                                initial="initial"
+                                animate="visible"
+                                transition={{duration: 2.7}}
                                 src="./assets/img/projet-4.jpeg"
                                 alt="projet1"
                                 className="myImg3"

@@ -10,15 +10,19 @@ import { AnimatePresence } from 'framer-motion';
 import Project from "./components/Project";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
+import MyProject from "./pages/MyProject";
 
 function App() {
   return (
-    <AnimatePresence>
+    <>
       <Nav/>
+    <AnimatePresence>
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/projets" component={Project} />
-        <Route exact path="/projet-1" component={Projet1} />
+          <Route exact path="/projets/:id">
+            <MyProject />
+          </Route>
         <Route exact path="/projet-2" component={Projet2} />
         <Route exact path="/projet-3" component={Projet3} />
         <Route exact path="/projet-4" component={Projet4} />
@@ -26,8 +30,10 @@ function App() {
         <Route exact path="/contact" component={Contact} />
         <Redirect to="/" />
       </Switch>
-      <Footer/>
-    </AnimatePresence>
+      
+      </AnimatePresence>
+      <Footer />
+      </>
     
   );
 }
