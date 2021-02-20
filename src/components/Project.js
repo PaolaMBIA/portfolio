@@ -158,100 +158,138 @@ const Project = () => {
   }
 
   return (
-      <>
-       
-        <motion.div 
-            className="content1"
-            initial="initial"
-            animate="visible"
-            exit="exit"
-            transition={transition}
-            variants={variants}
-            //transition={{duration: 1.2}}
-        >
+    <>    
+      <motion.div 
+          className="content1"
+          initial="initial"
+          animate="visible"
+          exit="exit"
+          transition={transition}
+          variants={variants}
+          //transition={{duration: 1.2}}
+      >
 
-              <h2>Mes réalisations</h2>
-              <div
-                  className="img-content"
-              >
-                  <div className="myPosts">
+        <h2>Mes réalisations</h2>
+        
+        <div className="img-content">
+          <div className="myPosts">
             <div className="myFirstPosts">
               <div className="img-container" onClick={() => { mySpecifyProject(1) }}>
-              <span>
-            <h3>title</h3>
-            <p>infos</p>
+                <span>
+                  <h3>Schitt's Creek Cafe Tropical</h3>                 
+                  <p>React JS, Node JS, MongoDB</p>                 
                 </span>
+
                 <motion.img
-                variants={imgAnim1}
-                initial="initial"
-                animate="visible"
-                transition={{ duration: 1.2 }}
-                src="./assets/img/projet-1.PNG"
-                alt="projet1"
-                className="myImg1"
-                            /> 
+                  variants={imgAnim1}
+                  initial="initial"
+                  animate="visible"
+                  transition={{ duration: 1 }}
+                  src="./assets/img/projet-1.PNG"
+                  alt="projet1"
+                  className="myImg1"
+                /> 
+                
               </div>
 
-                            <motion.img
-                                variants={imgAnim2}
-                                initial="initial"
-                                animate="visible"
-                                transition={{duration: 1.5}}
-                                src="./assets/img/projet-3.PNG"
-                                alt="projet1"
-                                className="myImg2"
-                            />  
-                      </div>
-                      <div className="mySecondPosts">
-                            <motion.img
-                                variants={imgAnim3}
-                                initial="initial"
-                                animate="visible"
-                                transition={{duration: 1.8}}
-                                src="./assets/img/projet-2.jpg"
-                                alt="projet1"
-                                className="myImg3"
-                            /> 
-                          
-                      </div>
-                  </div>
-                  <div className="myPosts">
-                      <div className="myFirstPosts">
-                            <motion.img
-                                variants={imgAnim4}
-                                initial="initial"
-                                animate="visible"
-                                transition={{duration: 2.1}}
-                                src="./assets/img/projet-5.PNG"
-                                alt="projet1"
-                                className="myImg1"
-                            /> 
-                            <motion.img
-                                variants={imgAnim5}
-                                initial="initial"
-                                animate="visible"
-                                transition={{duration: 2.4}}
-                                src="./assets/img/projet-6.JPG"
-                                alt="projet1"
-                                className="myImg1"
-                            />
-                      </div>
-                      <div className="mySecondPosts">
-                            <motion.img
-                                variants={imgAnim6}
-                                initial="initial"
-                                animate="visible"
-                                transition={{duration: 2.7}}
-                                src="./assets/img/projet-4.jpeg"
-                                alt="projet1"
-                                className="myImg3"
-                            />
-                      </div>
-                  </div> 
+              <div className="img-container" onClick={() => { mySpecifyProject(2) }}>
+                <span>
+                  <h3>PM movies</h3>                 
+                  <p>React JS, API The movies database</p>                 
+                </span>
+
+                <motion.img
+                  variants={imgAnim2}
+                  initial="initial"
+                  animate="visible"
+                  transition={{duration: 1.1}}
+                  src="./assets/img/projet-3.PNG"
+                  alt="projet1"
+                  className="myImg2"
+                />  
               </div>
-    
-          </motion.div>
+            </div>
+            
+            <div className="mySecondPosts">    
+              <div className="img-container" onClick={() => { mySpecifyProject(3) }}>
+                <span className="myMobile1">
+                  <h3>Mboa237</h3>                 
+                  <p><p>React native,</p> <p>firebase</p></p>                 
+                </span>
+
+                <motion.img
+                  variants={imgAnim3}
+                  initial="initial"
+                  animate="visible"
+                  transition={{duration: 1.2}}
+                  src="./assets/img/projet-2.jpg"
+                  alt="projet1"
+                  className="myImg3"
+                /> 
+              </div>       
+            </div>  
+          </div>
           
+
+          <div className="myPosts">            
+            <div className="myFirstPosts">    
+              <div className="img-container" onClick={() => { mySpecifyProject(4) }}>
+                <span>
+                  <h3>Site de jeunes entrepreneurs</h3>                 
+                  <p>WordPress</p>                 
+                </span>
+
+                <motion.img
+                  variants={imgAnim4}
+                  initial="initial"
+                  animate="visible"
+                  transition={{duration: 1.3}}
+                  src="./assets/img/projet-5.PNG"
+                  alt="projet1"
+                  className="myImg1"
+                />             
+              </div>
+
+              <div className="img-container" onClick={() => { mySpecifyProject(5) }}>
+                <span>
+                  <h3>pmTools</h3>                 
+                  <p>Angular, Node JS, MongoDB</p>                 
+                </span>
+
+                <motion.img
+                  variants={imgAnim5}
+                  initial="initial"
+                  animate="visible"
+                  transition={{duration: 1.4}}
+                  src="./assets/img/projet-6.JPG"
+                  alt="projet1"
+                  className="myImg1"
+                />
+              </div>
+            </div>
+            
+            <div className="mySecondPosts">
+              
+              <div className="img-container" onClick={() => { mySpecifyProject(6) }}>
+                <span className="myMobile">
+                  <h3>Afrik tchop</h3>                 
+                  <p>React native, PHP</p>                 
+                </span>
+
+                <motion.img
+                  variants={imgAnim6}
+                  initial="initial"
+                  animate="visible"
+                  transition={{duration: 1.5}}
+                  src="./assets/img/home1.jpeg"
+                  alt="projet1"
+                  className="myImg3"
+                />             
+              </div>
+            </div>            
+          </div>   
+        </div> 
+      </motion.div>    
     </>
   );
 };
