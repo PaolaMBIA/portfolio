@@ -2,12 +2,15 @@
     background: $color-6;
     //height: 70px;
     margin-top: 1rem;
-    padding: 1rem;
+    padding: 0.4rem;
     flex-shrink: 0;
     //visibility: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    //flex-direction: column;
+    justify-content: center;
     align-items: center;
 
     button{
@@ -26,6 +29,6 @@
     span{
         font-weight: bold;
         font-size: 20px;
-        margin-top: 10px;
+        margin-left: 20px;
     }
 }

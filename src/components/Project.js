@@ -28,27 +28,19 @@ const Project = () => {
     },
     exit: {
       opacity: 0.4,
-      transition: { duration: 0.35 },
-      x: -800,
+      transition: { duration: 0.35, ease: "easeInOut" },
+      x: "-100%",
     }
   };
-
+  const transition = { duration: 0.5, ease: "easeInOut" };
   // random img pop
   let plusMinus = Math.random() > 0.4 ? 1 : -1;
   let imgX = Math.random() * 200 * plusMinus;
   let imgY = Math.random() * 100 * plusMinus;
 
   const imgAnim = {
-    initial: {
-      opacity: 0,
-      x: imgX,
-      y: imgY,
-    },
-    visible: { 
-      opacity: 1,
-      x: 20,
-      y: 0,
-    }
+    enter: { x: 0, opacity: 1, transition },
+    exit: { x: "-100%", opacity: 0, transition }
   }
 
   const imgAnim1 = {
@@ -61,7 +53,7 @@ const Project = () => {
       opacity: 1,
       x: 20,
       y: 0,
-    }
+    },
   }
 
   const imgAnim2 = {
@@ -128,11 +120,6 @@ const Project = () => {
     }
   }
 
-  const transition = {
-    ease: [.03,.87,.73,.9],
-    duration: .6,
-    }
-
     const container = {
         hidden: { opacity: 1, scale: 0 },
         visible: {
@@ -151,7 +138,19 @@ const Project = () => {
           y: 0,
           opacity: 1
         }
-      }
+  }
+  
+  const postPreviewVariants = {
+    //initial: { x: "100%", opacity: 0 },
+    enter: { x: 0, opacity: 1, transition },
+    exit: { x: "-100%", opacity: 0, transition }
+  };
+
+  const blogVariants = {
+    enter: { transition: { staggerChildren: 0.1 } },
+    exit: { transition: { staggerChildren: 0.1 } }
+  };
+  
   
   const mySpecifyProject = (id) => {
     history.push(`projets/${id}`)
@@ -171,10 +170,20 @@ const Project = () => {
 
         <h2>Mes réalisations</h2>
         
-        <div className="img-content">
+        <div
+          className="img-content"
+          // initial="initial"
+          // animate="enter"
+          // exit="exit"
+          // variants={blogVariants}
+        >
           <div className="myPosts">
             <div className="myFirstPosts">
-              <div className="img-container" onClick={() => { mySpecifyProject(1) }}>
+              <motion.div
+                className="img-container"
+                variants={postPreviewVariants}
+                onClick={() => { mySpecifyProject(1) }}
+              >
                 <span>
                   <h3>Schitt's Creek Cafe Tropical</h3>                 
                   <p>React JS, Node JS, MongoDB</p>                 
@@ -190,9 +199,12 @@ const Project = () => {
                   className="myImg1"
                 /> 
                 
-              </div>
+              </motion.div>
 
-              <div className="img-container" onClick={() => { mySpecifyProject(2) }}>
+              <motion.div
+                className="img-container"
+                onClick={() => { mySpecifyProject(2) }}
+              >
                 <span>
                   <h3>PM movies</h3>                 
                   <p>React JS, API The movies database</p>                 
@@ -207,7 +219,7 @@ const Project = () => {
                   alt="projet1"
                   className="myImg2"
                 />  
-              </div>
+              </motion.div>
             </div>
             
             <div className="mySecondPosts">    

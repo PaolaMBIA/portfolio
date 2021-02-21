@@ -11,6 +11,7 @@ import Project from "./components/Project";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import MyProject from "./pages/MyProject";
+import test from "./components/test";
 
 function App() {
   return (
@@ -20,9 +21,8 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/projets" component={Project} />
-          <Route exact path="/projets/:id">
-            <MyProject />
-          </Route>
+          <Route exact={true} path="/projets/:id" component={MyProject} />
+          <Route exact={true} path="/pro/to" component={test}/>
         <Route exact path="/projet-2" component={Projet2} />
         <Route exact path="/projet-3" component={Projet3} />
         <Route exact path="/projet-4" component={Projet4} />

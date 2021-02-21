@@ -7,7 +7,7 @@ const Contact = () => {
     return (
         <div>
            
-            contact
+           <img src="./assets/img/projet-2.jpg" alt='{e.title}' />
            
         </div>
     )
