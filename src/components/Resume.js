@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 
 const Resume = () => {
     
@@ -47,18 +48,22 @@ const Resume = () => {
                 <div className="myBlockResume">  
                     <div className="myStory">
                         <h4>Qui suis-je?</h4>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+                        <span>Originaire du cameroun <img src="https://img.icons8.com/emoji/100/000000/cameroon-emoji.png" alt="cameroun" style={{ width: "30px", marginBottom:"-8px" }} /> et ouverte à m’adapter dans tout type d’environnement, j’ai décidé de venir poursuivre mes études supérieures en France <img src="https://img.icons8.com/emoji/100/000000/airplane-emoji.png" alt="avion" style={{ width: "30px", marginBottom:"-5px" }}/> en 2014, pour une formation d'ingénieurs en système embarqué de 5 ans. Durant cette dernière j’ai pu acquérir des compétences dans la programmation et j'ai également eu l'opportuinité de découvrir le monde du travail <img src="https://img.icons8.com/emoji/100/000000/briefcase-emoji.png" alt="travail" style={{ width: "30px", marginBottom:"-5px" }}/> dans une alternance de 3 ans au sein de la socièté <strong style={{color:`#05745a`}}>BODET</strong>.<br /><br/>
+                        Ayant la main dans le code et curieuse, je me suis lancée dans la réalisation d'un projet de domotique alliant le <strong style={{color:"#05745a"}}>Web</strong> et <strong style={{color:"#05745a"}}>l'embarqué</strong>. Ce projet m'a fait découvrir une réelle passion pour le développement Web.</span>
                     </div>  
-                    <div onMouseOver={animImage}>
+                    <div className="myBlockResuImage" onMouseOver={animImage}>
                          <img  src="./assets/img/diplome.png" alt="diplome" />
                     </div>     
                 </div>
                 <div className="myBlockResume2">            
                     <div className="myStory">
                         <h4>Ma passion?</h4>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+                        <span>Je suis direct devenue amoureuse <img src="https://img.icons8.com/emoji/48/000000/smiling-face-with-heart-eyes.png" alt="coeur" style={{ width: "30px", marginBottom:"-5px" }} /> des <strong style={{ color: "#05745a" }}>technologies du Web</strong>. En Mars 2020, j'ai suivi une première formation professionnalisante de <strong style={{ color: "#05745a" }}>développeur .Net</strong> dans l'optique de pouvoir approfondir la liaison qu'il y'a entre l'orienté objet et Web. J'ai pu acquérir des compétences dans le développement MVC. A la suite j'ai enchaîné sur une formation de <strong style={{ color: "#05745a" }}>développeur Web et Web mobile</strong> pour acquerir plus de connaissances.
+                        <br /><br />
+                        A ce jour, j'ai réalisé plusieurs <NavLink to="/projets" exact className="hover">projets</NavLink> et je n'arrête pas tellement c'est hyper intéressant. J'ai réellement trouvé mon épanouissement tant bien professionnel que personnel.<br /><br />
+                        Ci-dessous vous pourrez voir mes compétences acquises jusqu'à ce jour. Et ce n'est que le début <img src="https://img.icons8.com/emoji/100/000000/flexed-biceps.png" alt="bras" style={{ width: "30px", marginBottom:"-5px" }}/> </span>
                     </div>
-                    <div onMouseOver={animImage}>
+                    <div className="myBlockResuImage"  onMouseOver={animImage}>
                         <img style={{transform:"rotateY(180deg)"}} src="./assets/img/imag.jpeg" alt="diplome"/>
                     </div> 
                 </div>

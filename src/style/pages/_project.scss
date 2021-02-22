@@ -292,6 +292,14 @@
     //height: max-content;
   }
 
+//   .content1:before {
+//     content: '\00a0';
+//     display: block;
+//     margin-top: var(--space);
+//     height: 0;
+//     visibility: hidden;
+// }
+
   .content1 h2{
     color: $color-8;
     font-size: 40px;
@@ -358,6 +366,7 @@
     justify-content: space-around;
     //flex-wrap: wrap;
     height: max-content;
+    margin-bottom: 20px;
     //background-color: whitesmoke;
   }
 
@@ -368,18 +377,33 @@
     text-align: center;
     //background-color: blue;
     line-height: 25px;
-    width: 50%;
+    width: 45%;
   }
 
-  .myExplain a{
+  .myExplain .myLink{
+    color: whitesmoke;
+    font-weight: bold;
+  }
+
+  .myTitle a{
     color: rgb(212, 135, 34);
+    font-size: 18px;
+    
+  }
+
+  .myTitle p{
+    margin-bottom: 10px;
+  }
+
+  .myTitle a:hover{
+    opacity: 0.6;
   }
 
   .myTitle h1{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: $color-8;
     font-family: $font-2;
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .myLanguage{
@@ -401,11 +425,12 @@
   }
   .myImageProject{
      position: relative;
-     height: 500px;
+     //height: 700px;
      //background-color: whitesmoke;
      display: flex;
      align-items: center;
     // width: 33.1%;
+    //z-index: -1;
   }
 
   .myPagination{

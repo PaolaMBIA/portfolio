@@ -31,18 +31,19 @@ const Home = () => {
       }
     
     return (
-        <>
+      <>
             
-            <motion.div
-                        initial="initial"
-                        animate="visible"
-                        exit="exit"
-                        transition={transition}
-                        variants={variants}>
-                <Apropos/>
-            </motion.div>
+        <motion.div
+          initial="initial"
+          animate="visible"
+          exit="exit"
+          transition={transition}
+          variants={variants}
+        >
+          <Apropos/>
+        </motion.div>
             
-        </>
+      </>
     )
 };
 

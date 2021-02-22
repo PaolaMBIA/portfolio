@@ -78,6 +78,7 @@ const MyProject = () => {
                             <div className="myTitle">
                                 <h1>{e.title}</h1>
                                 <p className="myLanguage"><span>{e.languages}</span></p>
+                                <a href={e.link} target="_blank" rel="noreferrer" >{e.link}</a>
                             </div>
                             <div className="myExplain">
                                 {
@@ -86,7 +87,6 @@ const MyProject = () => {
                                     )
                                 }
                                 
-                                <a href={e.link} target="_blank" rel="noreferrer" >{e.link}</a>
                             </div>
                         </motion.div>
                         <motion.div

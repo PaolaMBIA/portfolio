@@ -45,15 +45,17 @@ export const projectsData = [
       date: "Janvier 2020",
       languages: "React, Node JS, MongoDB",
       infos:
-        ["Dans le cadre d’une amélioration du service de restauration du Schitt’s Creek Cafe Tropical, il est demandé de faire la création d’une API et des outils bien conçus pour s’assurer que la serveuse Twyla ne mélange pas les commandes des différents clients.",
-        "Cette API devra stocker les informations des clients, les commandes de ces derniers, les éléments disponibles dans le menu et les différents commentaires des clients.",
+        [`Dans le cadre d’une amélioration du service de restauration d'un Cafe au Canada, il etait question de faire la création d’une API et des outils bien conçus pour s’assurer que les serveurs ne mélangent pas les commandes des différents clients.`,
+        "Cette API devait stocker les informations des clients, les commandes de ces derniers, les éléments disponibles dans le menu et les différents commentaires des clients.",
         
-        `cette dernière devra être capable de :`,`
+        `On devait donc pouvoir :`,`
         - Permettre une récupération de données même après un crash complet du système ;`,`
         - Permettre l’insertion de plusieurs clients passant des commandes régulièrement ;`,`
         - Permettre au responsable du café de voir l’évolution au fil du temps de la consommation de certains aliments/boissons ;`,`
         - De rechercher les différents clients dans une catégorie précise.
-        `],
+        `,
+        "Ce projet m'a permis de faire beaucoup de manipulation de données."
+      ],
       img: [addCustomer, totalBill, stat, median, mongoDB ],
       link: "https://github.com/PaolaMBIA/Schitt_Creek_Cafe_Tropical",
     },
@@ -63,7 +65,13 @@ export const projectsData = [
       date: "Mars 2020",
       languages: "React JS, API The movies database",
       infos:
-        ["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"],
+        ["Dans l'optique d'apprendre plus sur les concepts de base de REACT JS, j'ai réalisé un site de deux pages d'affiche de films du plus populaire au moins populaire. Sur la première page, on a le listing des films avec les détails concernant le titre du film, l'image d'affiche, la date de publication, la langue originale, la moyenne de point obtenu et le resumé du film. On accède à la deuxième page en cliquant sur une affiche afin d'avoir un listing de films similaires.",
+          "Dans ce projet, j'ai pu :",
+          ` - Créer des HOOKS personnalisés;`,
+          `- Utiliser les Styled-components;`,
+          `- Faire de l'es6;`,
+          `- Communiquer avec la base de données TMDB (The Movie Database)`
+        ],
       img: [ popularMovies, similarMovies],
       link: "https://paolambia.fr/",
     },
