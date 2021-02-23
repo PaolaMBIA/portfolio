@@ -20,7 +20,7 @@ const Project = () => {
     initial: {
       opacity: 0,
       transition: { duration: 0.5 },
-      x: 200,
+      x: 0,
     },
     visible: { 
       opacity: 1,
@@ -29,14 +29,14 @@ const Project = () => {
     exit: {
       opacity: 0.4,
       transition: { duration: 0.35, ease: "easeInOut" },
-      x: "-100%",
+      x: 0,
     }
   };
   const transition = { duration: 0.5, ease: "easeInOut" };
   // random img pop
   let plusMinus = Math.random() > 0.4 ? 1 : -1;
-  let imgX = Math.random() * 200 * plusMinus;
-  let imgY = Math.random() * 100 * plusMinus;
+  let imgX = Math.random() * 100 * plusMinus;
+  let imgY = Math.random() * 50 * plusMinus;
 
   const imgAnim = {
     enter: { x: 0, opacity: 1, transition },
@@ -182,7 +182,7 @@ const Project = () => {
               <motion.div
                 className="img-container"
                 variants={postPreviewVariants}
-                onClick={() => { mySpecifyProject(1) }}
+                onClick={() => { mySpecifyProject("schitt-cafe") }}
               >
                 <span>
                   <h3>Schitt's Creek Cafe Tropical</h3>                 
@@ -203,7 +203,7 @@ const Project = () => {
 
               <motion.div
                 className="img-container"
-                onClick={() => { mySpecifyProject(2) }}
+                onClick={() => { mySpecifyProject("PM-movies") }}
               >
                 <span>
                   <h3>PM movies</h3>                 
@@ -223,7 +223,7 @@ const Project = () => {
             </div>
             
             <div className="mySecondPosts">    
-              <div className="img-container" onClick={() => { mySpecifyProject(3) }}>
+              <div className="img-container" onClick={() => { mySpecifyProject("mboa237") }}>
                 <span className="myMobile1">
                   <h3>Mboa237</h3>                 
                   <p><p>React native,</p> <p>firebase</p></p>                 
@@ -245,7 +245,7 @@ const Project = () => {
 
           <div className="myPosts">            
             <div className="myFirstPosts">    
-              <div className="img-container" onClick={() => { mySpecifyProject(4) }}>
+              <div className="img-container" onClick={() => { mySpecifyProject("jeunes-entrepreneurs") }}>
                 <span>
                   <h3>Site de jeunes entrepreneurs</h3>                 
                   <p>WordPress</p>                 
@@ -262,7 +262,7 @@ const Project = () => {
                 />             
               </div>
 
-              <div className="img-container" onClick={() => { mySpecifyProject(5) }}>
+              <div className="img-container" onClick={() => { mySpecifyProject("pmTools") }}>
                 <span>
                   <h3>pmTools</h3>                 
                   <p>Angular, Node JS, MongoDB</p>                 
@@ -282,7 +282,7 @@ const Project = () => {
             
             <div className="mySecondPosts">
               
-              <div className="img-container" onClick={() => { mySpecifyProject(6) }}>
+              <div className="img-container" onClick={() => { mySpecifyProject("afrik-tchop") }}>
                 <span className="myMobile">
                   <h3>Afrik tchop</h3>                 
                   <p>React native, PHP</p>                 

@@ -286,10 +286,51 @@
   }
 
   .content1{
-    padding-top: 150px;
+    padding-top: 110px;
     flex: 1 0 auto;
    // background-color: whitesmoke;
     //height: max-content;
+  }
+
+  .content2{
+    padding-top: 110px;
+    flex: 1 0 auto;
+    justify-content: center;
+    text-align: -webkit-center;
+   // background-color: whitesmoke;
+    //height: max-content;
+  }
+
+  .content2 .myMentions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+  }
+
+  .content2 .myMentions p{
+    color: $color-7;
+    text-align: justify;
+    line-height: 23px;
+    align-self: center;
+  }
+
+  .content2 .myMentions span{
+    color: $color-3;
+    font-weight: bold;
+    
+  }
+
+  .content2 .myMentions h4, .content2 .myMentions h2{
+    color: $color-8;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 20px;
+    align-self: center;
+  }
+
+  .content2 .myMentions h2{
+    font-size: 40px;
   }
 
 //   .content1:before {
@@ -306,6 +347,18 @@
     font-family: $font-2;
     text-align: center;
   }
+
+  .content1 .myReturnButton{
+    padding: 10px;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+  }
+
+  .content1 .myReturnButton:hover{
+    cursor: pointer;
+    background-color: rgb(212, 135, 34);
+  }
+
   .img-content {
     
     display: flex;
@@ -377,12 +430,16 @@
     text-align: center;
     //background-color: blue;
     line-height: 25px;
-    width: 45%;
+    width: 50%;
   }
 
   .myExplain .myLink{
     color: whitesmoke;
     font-weight: bold;
+  }
+
+  .myExplain{
+    margin-bottom: 40px;
   }
 
   .myTitle a{

@@ -40,7 +40,7 @@ import recettes from "../assets/image/recettes.jpeg";
 export const projectsData = [
 
     {
-      id: 1,
+      id: "schitt-cafe",
       title: "Schitt's Creek Cafe Tropical",
       date: "Janvier 2020",
       languages: "React, Node JS, MongoDB",
@@ -60,7 +60,7 @@ export const projectsData = [
       link: "https://github.com/PaolaMBIA/Schitt_Creek_Cafe_Tropical",
     },
     {
-      id: 2,
+      id: "PM-movies",
       title: "PM movies",
       date: "Mars 2020",
       languages: "React JS, API The movies database",
@@ -70,33 +70,40 @@ export const projectsData = [
           ` - Créer des HOOKS personnalisés;`,
           `- Utiliser les Styled-components;`,
           `- Faire de l'es6;`,
-          `- Communiquer avec la base de données TMDB (The Movie Database)`
+          `- Communiquer avec la base de données TMDB (The Movie Database).`
         ],
       img: [ popularMovies, similarMovies],
       link: "https://paolambia.fr/",
     },
-    {
-      id: 3,
-      title: "Mboa237",
-      date: "Avril 2020",
-      languages: "React native, firebase",
-      infos:
-        ["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"],
+  {
+    id: "mboa237",
+    title: "Mboa237",
+    date: "Avril 2020",
+    languages: "React native, firebase",
+    infos:
+      [`Il y'a quelque mois je discutais avec un ami qui devait rentrer en vacances au Cameroun (pays d'origine). Il avait une principale envie "découvrir son pays" c'est-à-dire visiter les zones touristiques. Mais on fait face actuellement à trois problématiques : Quels sont les endroits touristiques ? Comment y accéder ? Où loger ?`,
+        `Face à ces interrogations, j'ai eu l'idée de développer une application mobile du tourisme au Cameroun. Cette dernière sera sous forme de réseau social permettant de:`,
+        `- Créer un compte utilisateur;`,
+        `- Avoir accès à tous les posts publiés;`,
+        `- Liker / commenter des posts;`,
+        `- Rechercher par mots clés des endroits à visiter;`,
+        `- Créer / modifier / effacer sa publication `,
+      `Cette application sera plus dans le thème du partage, pour faire évoluer le tourisme. Ainsi, lors de la publication d'un nouveau post, l'utilisateur devra mettre des photos avec un descriptif repondant aux problématiques soulevées.`],
       img: [pageConnexion, pageInscription , pageAccueil, projet3],
       link: "https://github.com/PaolaMBIA/Application-mobile-du-tourisme-au-Cameroun",
     },
     {
-      id: 4,
+      id: "jeunes-entrepreneurs",
       title: "Site de jeunes entrepreneurs",
       date: "Juillet 2020",
       languages: "WordPress",
       infos:
-        ["Le Cameroun pays d’Afrique, regorge de jeunes entrepreneurs souhaitant se faire connaître sur le plan national comme international. Nous avons recueillis pour le moment deux jeunes femmes très dynamiques qui se sont lancées dans la fabrication de boissons à base de fruits. Mim’s Drink qui présente une variété de boissons 100% naturels et Tiki qui utilise spécialement du jus d’ananas pour faire du vin. Laissez-vous séduire par leurs présentations respectives et surtout n’hésitez pas à partager ou mieux commander des produits de votre choix!!!"],
+        ["Le Cameroun pays d’Afrique, regorge de jeunes entrepreneurs souhaitant se faire connaître sur le plan national comme international. J'ai décidé de faire un site Web regroupant plusieurs bussiness en cours de développement. Pour le moment je met en avant deux jeunes femmes très dynamiques qui se sont lancées dans la fabrication de boissons à base de fruits.",` Mim’s Drink qui présente une variété de boissons 100% naturels et Tiki qui utilise spécialement du jus d’ananas pour faire du vin.`,` Laissez-vous séduire par leurs présentations respectives et surtout n’hésitez pas à partager ou mieux commander des produits de votre choix!!!`],
       img: [ mims, tiki],
       link: "http://entrepreneurs.paolambia.fr/entrepreneurs/",
   },
   {
-    id: 5,
+    id: "pmTools",
     title: "pmTools",
     date: "Juillet 2020",
     languages: "Angular, Node JS, MongoDB",
@@ -106,7 +113,7 @@ export const projectsData = [
     link: "https://github.com/PaolaMBIA/ToDoList",
   },
   {
-    id: 6,
+    id: "afrik-tchop",
     title: "Afrik tchop",
     date: "Juillet 2020",
     languages: "React native, Php",

@@ -80,11 +80,54 @@ const Apropos = () => {
         // })
     }
 
+    const variants = {
+        initial: {
+            opacity: 0,
+            transition: { duration: 0.5 },
+            x: 100,
+          },
+          visible: { 
+            opacity: 1,
+            x: 0,
+          },
+          exit: {
+            opacity: 0.4,
+            transition: { duration: 0.35 },
+            x: -800,
+          }
+    };
+
+    const transition = {
+        ease: [.03,.87,.73,.9],
+        duration: .9,
+    }
+
+    let plusMinus = Math.random() > 0.4 ? 1 : -1;
+    let imgX = Math.random() * 200 * plusMinus;
+    
+    const identite = {
+        initial: {
+          opacity: 0,
+          x: imgX,
+        },
+        visible: { 
+          opacity: 1,
+          x: 0,
+          y: 0,
+        }
+      }
+
     return (
         <div
             className="myHomePage"
         >
-            <motion.div className="myIdentite" >
+            <motion.div
+                className="myIdentite"
+                variants={identite}
+                initial="initial"
+                animate="visible"
+                transition={{duration: 1.5}}
+            >
                 {/* {
                     showImage ? */}
                         <img id="photoProfil" src="./assets/img/img.jpeg" alt="photoProfil" />

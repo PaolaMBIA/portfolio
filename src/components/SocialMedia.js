@@ -20,13 +20,13 @@ const SocialMedia = () => {
     return (
         <div className="social-network">
             <ul className="content">
-                <a href="#!" target="_blank" rel="noopener noreferrer" className="hover"  onMouseOver={anim}>
+                <a href="https://www.linkedin.com/in/paola-mbia-messi-86273a150/" target="_blank" rel="noopener noreferrer"   onMouseOver={anim}>
                     <li><i className="fab fa-linkedin"></i></li>
                 </a>
-                <a href="#!" target="_blank" rel="noopener noreferrer" className="hover" onMouseOver={anim}>
+                <a href="https://github.com/PaolaMBIA/" target="_blank" rel="noopener noreferrer"  onMouseOver={anim}>
                     <li><i className="fab fa-github"></i></li>
                 </a>
-                <a href="#!" target="_blank" rel="noopener noreferrer" className="hover" onMouseOver={anim}>
+                <a href="https://www.instagram.com/paolambiamessi/" target="_blank" rel="noopener noreferrer"  onMouseOver={anim}>
                     <li><i className="fab fa-instagram"></i></li>
                 </a>
             </ul>

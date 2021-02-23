@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import {projectsData} from '../data/projectsData';
-import { useParams } from 'react-router-dom';
+import { useHistory, useParams } from 'react-router-dom';
 import { motion } from "framer-motion";
 
 import { wrap } from "popmotion";
@@ -13,9 +13,9 @@ const postVariants = {
 };
   
 const imageVariants = {
-    initial: { x: -100, opacity: 0 },
-    enter: { x: 0, opacity: 1, transition },
-    exit: { x: 100, opacity: 0, transition }
+    initial: { y: -100, opacity: 0 },
+    enter: { y: 0, opacity: 1, transition },
+    exit: { y: 100, opacity: 0, transition }
 };
   
 const swipeConfidenceThreshold = 10000;
@@ -38,7 +38,7 @@ const MyProject = () => {
     const [resultPost, setResultPost] = useState({ mySearchPost1: projectsData })
 
     useEffect(() => {
-        const fiterResult = projectsData.filter(e => e.id === parseInt(id));
+        const fiterResult = projectsData.filter(e => e.id === id);
 
         setResultPost({ mySearchPost1: fiterResult })
 
@@ -58,10 +58,17 @@ const MyProject = () => {
   
     const paginate = (newDirection) => {
       setPage([page + newDirection, newDirection]);
-    };
+  };
+
+  const history = useHistory();
+  
+  const myReturn = () => {
+    history.push(`/projets`)
+  }
     
     return (
-        <div className="content1">
+      <div className="content1">
+        <button className="myReturnButton" onClick={myReturn}><i class="fas fa-arrow-left"></i>  retour</button>
             {
                 resultPost.mySearchPost1.map(e =>
                     <motion.div
@@ -97,10 +104,8 @@ const MyProject = () => {
                             variants={imageVariants}
                         >
                             
-                            {
-                                
-                                  
-                                (e.id === 3) || (e.id === 6) ? <motion.img 
+                            {   
+                                (e.id === "mboa237") || (e.id === "afrik-tchop") ? <motion.img 
                                 alt={e.title}
                                 className="myImagesAppli"
                                 key={page}

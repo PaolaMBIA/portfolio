@@ -1,6 +1,8 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 
+import { motion } from 'framer-motion';
+
 const Resume = () => {
     
     const anim = () => {
@@ -42,8 +44,28 @@ const Resume = () => {
         })
     }
 
+    let plusMinus = Math.random() > 0.4 ? 1 : -1;
+    let imgX = Math.random() * 200 * plusMinus;
+
+    const resume = {
+        initial: {
+          opacity: 0,
+          x: imgX,
+        },
+        visible: { 
+          opacity: 1,
+            x: 0,
+        }
+      }
+
     return (
-        <div className="myResume">
+        <motion.div
+            className="myResume"
+            variants={resume}
+            initial="initial"
+            animate="visible"
+            transition={{duration: 2.1}}
+        >
             <div className="myGlobalBlockResume">
                 <div className="myBlockResume">  
                     <div className="myStory">
@@ -109,7 +131,7 @@ const Resume = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

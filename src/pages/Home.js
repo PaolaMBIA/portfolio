@@ -12,7 +12,7 @@ const Home = () => {
         initial: {
             opacity: 0,
             transition: { duration: 0.5 },
-            x: 200,
+            x: 0,
           },
           visible: { 
             opacity: 1,
@@ -21,7 +21,7 @@ const Home = () => {
           exit: {
             opacity: 0.4,
             transition: { duration: 0.35 },
-            x: -800,
+            x: -0,
           }
     };
 
