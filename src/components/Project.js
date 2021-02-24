@@ -262,10 +262,10 @@ const Project = () => {
                 />             
               </div>
 
-              <div className="img-container" onClick={() => { mySpecifyProject("pmTools") }}>
+              <div className="img-container" onClick={() => { mySpecifyProject("Gestion-dressing") }}>
                 <span>
-                  <h3>pmTools</h3>                 
-                  <p>Angular, Node JS, MongoDB</p>                 
+                  <h3>Gestion dressing pour malvoyant</h3>                 
+                  <p>Vue JS, Arduino</p>                 
                 </span>
 
                 <motion.img
@@ -273,7 +273,7 @@ const Project = () => {
                   initial="initial"
                   animate="visible"
                   transition={{duration: 1.4}}
-                  src="./assets/img/projet-6.JPG"
+                  src="./assets/img/arduinoVue.JPG"
                   alt="projet1"
                   className="myImg1"
                 />
@@ -300,7 +300,61 @@ const Project = () => {
               </div>
             </div>            
           </div>   
+
         </div> 
+
+        <div className="myPosts">
+            <div className="myFirstPosts">
+              <motion.div
+                className="img-container"
+                variants={postPreviewVariants}
+                onClick={() => { mySpecifyProject("Pilotage-cloches") }}
+              >
+                <span>
+                  <h3>Pilotage des cloches</h3>                 
+                  <p>HTML5, CSS3, Javascript, esp8266</p>                 
+                </span>
+
+                <motion.img
+                  variants={imgAnim1}
+                  initial="initial"
+                  animate="visible"
+                  transition={{ duration: 1 }}
+                  src="./assets/img/htmlEsp8266.JPG"
+                  alt="projet1"
+                  className="myImg1"
+                /> 
+                
+              </motion.div>
+
+          </div>
+          
+          <div className="myFirstPosts">
+              <motion.div
+                className="img-container"
+                variants={postPreviewVariants}
+                onClick={() => { mySpecifyProject("cvWeb") }}
+              >
+                <span>
+                  <h3>CV Web</h3>                 
+                  <p>React JS</p>                 
+                </span>
+
+                <motion.img
+                  variants={imgAnim1}
+                  initial="initial"
+                  animate="visible"
+                  transition={{ duration: 1 }}
+                  src="./assets/img/cvWeb.JPG"
+                  alt="projet1"
+                  className="myImg1"
+                /> 
+                
+              </motion.div>
+
+            </div>
+              
+          </div>
       </motion.div>    
     </>
   );

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import React, { useEffect, useState } from 'react'
 import Resume from './Resume'
 //import Slide from './Slide'
@@ -115,11 +116,13 @@ const Apropos = () => {
           x: 0,
           y: 0,
         }
-      }
+    }
+    
 
     return (
         <div
             className="myHomePage"
+           id="titre"
         >
             <motion.div
                 className="myIdentite"
@@ -133,7 +136,7 @@ const Apropos = () => {
                         <img id="photoProfil" src="./assets/img/img.jpeg" alt="photoProfil" />
                         {/* : <img id="photoProfil" src="./assets/img/imag.jpeg" alt="photoProfil"  />
                 } */}
-                <div className="titre">
+                <div className="titre" >
                     <motion.h2>Paola MBIA MESSI</motion.h2>
             <motion.h3>
               {/* <span id="text-target"></span> */}
@@ -142,7 +145,8 @@ const Apropos = () => {
                     <SocialMedia/>
                 </div>
             </motion.div>
-            <Resume/>
+            <Resume />
+            <div className="myReturnButton"><a id="cRetour" className="cInvisible" href="#titre"></a></div>
         </div>
     )
 }

@@ -34,17 +34,20 @@ const variants = {
   };
 
 const MyProject = () => {
-    const { id } = useParams();
-    const [resultPost, setResultPost] = useState({ mySearchPost1: projectsData })
+  const { id } = useParams();
+  const [resultPost, setResultPost] = useState({ mySearchPost1: projectsData });
+  const history = useHistory();
 
     useEffect(() => {
-        const fiterResult = projectsData.filter(e => e.id === id);
-
+      const fiterResult = projectsData.filter(e => e.id === id);
+      
+      if (fiterResult.length === 0) {
+        history.push('/')
+      } else {
         setResultPost({ mySearchPost1: fiterResult })
-
-        console.log(fiterResult)
+      }
     
-    }, [id])
+    }, [id, history])
 
     const [[page, direction], setPage] = useState([0, 0]);
 
@@ -60,7 +63,6 @@ const MyProject = () => {
       setPage([page + newDirection, newDirection]);
   };
 
-  const history = useHistory();
   
   const myReturn = () => {
     history.push(`/projets`)
@@ -84,8 +86,9 @@ const MyProject = () => {
                         >
                             <div className="myTitle">
                                 <h1>{e.title}</h1>
-                                <p className="myLanguage"><span>{e.languages}</span></p>
+                        <p className="myLanguage"><span>{e.languages}</span> <span style={{fontSize:"18px", color:"tomato"}}>_{ e.date}</span></p>
                                 <a href={e.link} target="_blank" rel="noreferrer" >{e.link}</a>
+                                
                             </div>
                             <div className="myExplain">
                                 {

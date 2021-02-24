@@ -6,6 +6,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  z-index: 1;
 
   &:before {
     content: '';
@@ -17,20 +18,7 @@
     top: 0px;
     left: 0px;
     z-index: -1;
-    //animation: navAnim 20s infinite alternate;
 
-    @keyframes navAnim {
-      50% {
-        transform: scale(1.2);
-      }
-      100% {
-        transform: scale(1);
-      }
-    }
-    @media screen and (max-width: 430px){
-      height: 50px;
-      width: 50px;
-    }
   }
   
   .fas.fa-sort-down{
@@ -43,6 +31,10 @@
     width: 500px;
     margin-right: 10%;
     padding-top: 30px;
+  }
+
+  .myhambur{
+    display: none;
   }
 
   #myLogo{
@@ -88,5 +80,15 @@
 
   .nav-portfolio:hover .nav-projects{
     //visibility: visible;
+  }
+
+  @media screen and (max-width: 991px){
+    .myUl{
+      display: none;
+    }
+
+    .myhambur{
+      display: block;
+    }
   }
 }

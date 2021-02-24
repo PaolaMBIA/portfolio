@@ -1,48 +1,66 @@
 .shadow{
 
     //height: 200px;
-   // background-color: whitesmoke;
+   //background-color: whitesmoke;
+   bottom: 0;
 }
 
-.myFooter{
-    background: $color-6;
-    //height: 70px;
-    //margin-top: auto;
-    padding: 0.4rem;
-    position: absolute;
+.myDivFooter{
+    //position: absolute;
+    //top: 100%;
     bottom: 0;
     width: 100%;
-    //flex-shrink: 0;
-    //visibility: hidden;
-    //padding-top: 50vh;
-    display: flex;
-    //flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    //background-color: red;
+    margin-bottom: 0;
 
+    .myFooter{
+        background: $color-6;
+        //height: 70px;
+        //margin-top: auto;
+        padding: 0.4rem;
+        // position: absolute;
+        // bottom: 0;
+        // width: 100%;
+        //flex-shrink: 0;
+        //visibility: hidden;
+        //padding-top: 50vh;
+        display: flex;
+        //flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        
+       .myNameFooter{
+           display: flex;
+           justify-content: center;
+       }
 
-    button{
-        height: 30px;
-        width: 250px;
-        background-color: $color-8;
-        color: $color-6;
+       .myNameFooter p{
         font-size: 20px;
-    }
-
-    button:hover{
-        opacity: 0.5;
-        cursor: pointer;
-    }
-
-    span {
-        font-weight: bold;
-        font-size: 20px;
-        margin-left: 20px;
-        color: $color-5;
-    }
-
-    span:hover {
-        transform: scale(1);
-        color: $color-8;
+       }
+    
+        button{
+            height: 30px;
+            width: 250px;
+            background-color: $color-8;
+            color: $color-6;
+            font-size: 20px;
+        }
+    
+        button:hover{
+            opacity: 0.5;
+            cursor: pointer;
+        }
+    
+        span {
+            font-weight: bold;
+            font-size: 20px;
+            //margin-left: 20px;
+            color: $color-5;
+        }
+    
+        span:hover {
+            transform: scale(1);
+            color: $color-8;
+        }
     }
 }

@@ -31,14 +31,9 @@ $red: rgb(253, 87, 87);
   outline: none;
   border: none;
   text-decoration: none;
-
-  &::selection {
-    color: $color-1;
-    background: $color-2;
-  }
 }
 html { 
-  scroll-behavior: unset;
+  scroll-behavior: smooth;
 }
 a{
   color: $color-7;

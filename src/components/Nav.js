@@ -21,6 +21,7 @@ const Nav = () =>{
                     <li>.contact()</li>
                 </NavLink>
             </ul>
+            <div className="myhambur">icone</div>
         </div>
     )
 }

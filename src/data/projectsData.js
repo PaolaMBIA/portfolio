@@ -26,7 +26,9 @@ import tiki from "../assets/image/tiki.JPG";
 
 //pmTools 
 
-import projet5 from "../assets/image/projet-6.JPG";
+import projet5 from "../assets/image/arduinoVue.JPG";
+import cloches from "../assets/image/htmlEsp8266.JPG";
+import cvWeb from "../assets/image/cvWeb.JPG";
 
 //afrik tchop
 
@@ -42,7 +44,7 @@ export const projectsData = [
     {
       id: "schitt-cafe",
       title: "Schitt's Creek Cafe Tropical",
-      date: "Janvier 2020",
+      date: "Novembre 2020 ~ Janvier 2021",
       languages: "React, Node JS, MongoDB",
       infos:
         [`Dans le cadre d’une amélioration du service de restauration d'un Cafe au Canada, il etait question de faire la création d’une API et des outils bien conçus pour s’assurer que les serveurs ne mélangent pas les commandes des différents clients.`,
@@ -62,7 +64,7 @@ export const projectsData = [
     {
       id: "PM-movies",
       title: "PM movies",
-      date: "Mars 2020",
+      date: "Septembre 2020",
       languages: "React JS, API The movies database",
       infos:
         ["Dans l'optique d'apprendre plus sur les concepts de base de REACT JS, j'ai réalisé un site de deux pages d'affiche de films du plus populaire au moins populaire. Sur la première page, on a le listing des films avec les détails concernant le titre du film, l'image d'affiche, la date de publication, la langue originale, la moyenne de point obtenu et le resumé du film. On accède à la deuxième page en cliquant sur une affiche afin d'avoir un listing de films similaires.",
@@ -78,7 +80,7 @@ export const projectsData = [
   {
     id: "mboa237",
     title: "Mboa237",
-    date: "Avril 2020",
+    date: "Février 2021",
     languages: "React native, firebase",
     infos:
       [`Il y'a quelque mois je discutais avec un ami qui devait rentrer en vacances au Cameroun (pays d'origine). Il avait une principale envie "découvrir son pays" c'est-à-dire visiter les zones touristiques. Mais on fait face actuellement à trois problématiques : Quels sont les endroits touristiques ? Comment y accéder ? Où loger ?`,
@@ -103,19 +105,20 @@ export const projectsData = [
       link: "http://entrepreneurs.paolambia.fr/entrepreneurs/",
   },
   {
-    id: "pmTools",
-    title: "pmTools",
-    date: "Juillet 2020",
-    languages: "Angular, Node JS, MongoDB",
+    id: "Gestion-dressing",
+    title: "Gestion dressing pour malvoyant",
+    date: "Janvier 2020 ~ Mars 2020",
+    languages: "Vue JS, Arduino",
     infos:
-      ["Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste."],
+      ["Dans le cadre du développement d'un projet en interne dans la socièté ADENTIS, j'ai été amené à développer un prototype de boitier à effet sonore pour faciliter le choix de vêtements des personnes malvoyantes. Ces derniers devaient être assistés lors de l'enrégistrement vocal.","Les objectifs étaient de pouvoir : ","- Faire un enrégistrement vocale des descriptifs d'un vêtement sur un tag NFC (qui était ensuite intégré à l'habit);","- Visualiser à l'aide d'une interface Web les vêtements enrégistrés avec une possibilité de modification et de suppression; ","- Prendre en photo les vêtements pour les associer aux notes vocales;","- Rapprocher le boitier vers un habit et écouter l'enrégistrement qui a été fait."],
     img: [projet5],
-    link: "https://github.com/PaolaMBIA/ToDoList",
+    link: "",
   },
+  
   {
     id: "afrik-tchop",
     title: "Afrik tchop",
-    date: "Juillet 2020",
+    date: "2020",
     languages: "React native, Php",
     infos: [
       ` Dans le cadre de notre formation professionnelle de développeur d’application Web et mobile, nous avons eu l’idée de former une équipe afin de pouvoir réaliser un projet mettant en pratique les connaissances acquises tout au long de la formation.`,
@@ -129,5 +132,33 @@ export const projectsData = [
       `],
     img: [home1,connexion,inscription , projet6, accueil, recettes],
     link: "https://github.com/Afro-tchop/Afro",
+  },
+
+  {
+    id: "Pilotage-cloches",
+    title: "Pilotage des cloches",
+    date: "2017 ~ 2019",
+    languages: "HTML5, CSS3, Javascript, esp8266",
+    infos:
+      ["Dans le cadre de mon alternance dans la socièté BODET (leader européen de la mesure et gestion du temps), je devais participer à l'étude et le développement d'un nouveau produit visant à rendre les prêtres connectés.", "L'objectif était de permettre à un prêtre (utilisateur) de piloter les cloches de son église depuis une interface Web (sur sa tablette).", "Pour ce faire, j'ai été amené à :",
+        "- Rechercher des modules (cartes électroniques) pouvant répondre aux attentes et faire un rapport de synthèse;",
+        "- Réaliser l'interface utilisateur en HTML, CSS, Javascript;",
+      '- Vérifier la bonne communication des données "interface utilisateur vers les cloches" via le bus de communication RS485.'],
+    img: [cloches],
+    link: "",
+  },
+
+  {
+    id: "cvWeb",
+    title: "CV Web",
+    date: "2021",
+    languages: "React JS",
+    infos:
+      ["Dans le cadre de mon alternance dans la socièté BODET (leader européen de la mesure et gestion du temps), je devais participer à l'étude et le développement d'un nouveau produit visant à rendre les prêtres connectés.", "L'objectif était de permettre à un prêtre (utilisateur) de piloter les cloches de son église depuis une interface Web (sur sa tablette).", "Pour ce faire, j'ai été amené à :",
+        "- Rechercher des modules (cartes électroniques) pouvant répondre aux attentes et faire un rapport de synthèse;",
+        "- Réaliser l'interface utilisateur en HTML, CSS, Javascript;",
+      '- Vérifier la bonne communication des données "interface utilisateur vers les cloches" via le bus de communication RS485.'],
+    img: [cvWeb],
+    link: "",
   },
   ];

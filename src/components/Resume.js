@@ -70,8 +70,8 @@ const Resume = () => {
                 <div className="myBlockResume">  
                     <div className="myStory">
                         <h4>Qui suis-je?</h4>
-                        <span>Originaire du cameroun <img src="https://img.icons8.com/emoji/100/000000/cameroon-emoji.png" alt="cameroun" style={{ width: "30px", marginBottom:"-8px" }} /> et ouverte à m’adapter dans tout type d’environnement, j’ai décidé de venir poursuivre mes études supérieures en France <img src="https://img.icons8.com/emoji/100/000000/airplane-emoji.png" alt="avion" style={{ width: "30px", marginBottom:"-5px" }}/> en 2014, pour une formation d'ingénieurs en système embarqué de 5 ans. Durant cette dernière j’ai pu acquérir des compétences dans la programmation et j'ai également eu l'opportuinité de découvrir le monde du travail <img src="https://img.icons8.com/emoji/100/000000/briefcase-emoji.png" alt="travail" style={{ width: "30px", marginBottom:"-5px" }}/> dans une alternance de 3 ans au sein de la socièté <strong style={{color:`#05745a`}}>BODET</strong>.<br /><br/>
-                        Ayant la main dans le code et curieuse, je me suis lancée dans la réalisation d'un projet de domotique alliant le <strong style={{color:"#05745a"}}>Web</strong> et <strong style={{color:"#05745a"}}>l'embarqué</strong>. Ce projet m'a fait découvrir une réelle passion pour le développement Web.</span>
+                        <span>Originaire du cameroun <img src="https://img.icons8.com/emoji/100/000000/cameroon-emoji.png" alt="cameroun" style={{ width: "30px", marginBottom:"-8px" }} /> et ouverte à m’adapter dans tout type d’environnement, j’ai décidé de venir poursuivre mes études supérieures en France <img src="https://img.icons8.com/emoji/100/000000/airplane-emoji.png" alt="avion" style={{ width: "30px", marginBottom:"-5px" }}/> en 2014, pour une formation d'ingénieurs en système embarqué (alliant informatique et électronique) de 5 ans. Durant cette dernière j’ai pu acquérir des compétences dans la rédaction de cahiers de charges et spécifications fonctionnelles, dans la programmation en <strong style={{color:`#05745a`}}>C</strong>, <strong style={{color:`#05745a`}}>HTML</strong>, <strong style={{color:`#05745a`}}>CSS</strong>, <strong style={{color:`#05745a`}}>JavaScript</strong> et j'ai également eu l'opportunité de découvrir le monde du travail <img src="https://img.icons8.com/emoji/100/000000/briefcase-emoji.png" alt="travail" style={{ width: "30px", marginBottom:"-5px" }}/> dans une alternance de 3 ans au sein de la socièté <strong style={{color:`#05745a`}}>BODET</strong>.<br /><br/>
+                        J'ai ensuite débuté un projet en interne dans la socièté <strong style={{color:"#05745a"}}>ADENTIS</strong> avec le Framework <strong style={{color:"#05745a"}}>Vue JS</strong>. Ce projet m'a donné l'envie de plus me spécialiser dans le développement Web.</span>
                     </div>  
                     <div className="myBlockResuImage" onMouseOver={animImage}>
                          <img  src="./assets/img/diplome.png" alt="diplome" />
@@ -80,7 +80,7 @@ const Resume = () => {
                 <div className="myBlockResume2">            
                     <div className="myStory">
                         <h4>Ma passion?</h4>
-                        <span>Je suis direct devenue amoureuse <img src="https://img.icons8.com/emoji/48/000000/smiling-face-with-heart-eyes.png" alt="coeur" style={{ width: "30px", marginBottom:"-5px" }} /> des <strong style={{ color: "#05745a" }}>technologies du Web</strong>. En Mars 2020, j'ai suivi une première formation professionnalisante de <strong style={{ color: "#05745a" }}>développeur .Net</strong> dans l'optique de pouvoir approfondir la liaison qu'il y'a entre l'orienté objet et Web. J'ai pu acquérir des compétences dans le développement MVC. A la suite j'ai enchaîné sur une formation de <strong style={{ color: "#05745a" }}>développeur Web et Web mobile</strong> pour acquerir plus de connaissances.
+                        <span>Je suis direct devenue amoureuse <img src="https://img.icons8.com/emoji/48/000000/smiling-face-with-heart-eyes.png" alt="coeur" style={{ width: "30px", marginBottom:"-5px" }} /> des <strong style={{ color: "#05745a" }}>technologies du Web</strong>. En Mars 2020, j'ai suivi une formation professionnalisante de <strong style={{ color: "#05745a" }}>développeur .Net</strong> dans l'optique de pouvoir approfondir la liaison qu'il y'a entre l'orienté objet et Web. J'ai pu acquérir des compétences dans l'architecte MVC. A la suite j'ai enchaîné sur une formation de <strong style={{ color: "#05745a" }}>développeur Web et Web mobile</strong> pour acquerir plus de connaissances.
                         <br /><br />
                         A ce jour, j'ai réalisé plusieurs <NavLink to="/projets" exact className="hover">projets</NavLink> et je n'arrête pas tellement c'est hyper intéressant. J'ai réellement trouvé mon épanouissement tant bien professionnel que personnel.<br /><br />
                         Ci-dessous vous pourrez voir mes compétences acquises jusqu'à ce jour. Et ce n'est que le début <img src="https://img.icons8.com/emoji/100/000000/flexed-biceps.png" alt="bras" style={{ width: "30px", marginBottom:"-5px" }}/> </span>
@@ -114,20 +114,32 @@ const Resume = () => {
                         <p>React JS/native</p>
                     </div>
                     <div onMouseOver={anim}>
-                        <img src="./assets/img/icons8-nodejs.svg" alt="nodejs" />
-                        <p>Node JS</p>
+                        <img src="https://img.icons8.com/color/100/000000/vue-js.png" alt="vuejs"/>
+                        <p>Vue JS</p>
                     </div>
                     <div onMouseOver={anim}>
                         <img src="./assets/img/icons8-ionic.svg" alt="ionic" />
                         <p>Ionic</p>
                     </div>
                     <div onMouseOver={anim}>
-                        <img src="./assets/img/icons8-mongodb.svg" alt="mongodb" />  
-                        <p>MongoDb</p>
+                        <img src="./assets/img/icons8-nodejs.svg" alt="nodejs" />
+                        <p>Node JS</p>
                     </div>
                     <div onMouseOver={anim}>
                         <img src="./assets/img/icons8-firebase.svg" alt="firebase" />
                         <p>Firebase</p>
+                    </div>
+                    <div onMouseOver={anim}>
+                        <img src="./assets/img/icons8-mongodb.svg" alt="mongodb" />
+                        <p>MongoDb</p>
+                    </div>
+                    <div onMouseOver={anim}>
+                        <img src="https://img.icons8.com/fluent/100/000000/adobe-xd.png" alt="adobeXD"/>
+                        <p>Adobe XD</p>
+                    </div>
+                    <div onMouseOver={anim}>
+                        <img src="https://img.icons8.com/material-sharp/100/000000/github.png" alt="Github"/>
+                        <p>Github</p>
                     </div>
                 </div>
             </div>

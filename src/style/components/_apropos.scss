@@ -23,6 +23,7 @@
 
         border-bottom: 1px solid $color-8;
         border-bottom-left-radius: 20px;
+        //z-index: -1;
         //background-color: whitesmoke;
     }
 
@@ -124,7 +125,7 @@
         color: $color-7;
         margin-top: 25px;
         font-size: 20px;
-        line-height: 27px;
+        line-height: 29px;
     }
 
     .mySkills{
@@ -164,4 +165,43 @@
         transition: 1.1s ease-out;
     }
 
+    .myReturnButton #cRetour{
+        border-radius:3px;
+        padding:10px;
+        font-size:15px;
+        text-align:center;
+        color:$color-8;
+        background-color:$color-3;
+        position:fixed;
+        right:20px;
+        bottom: 100px;
+        opacity:1;
+        z-index:99999;
+        transition:all ease-in 0.2s;
+        backface-visibility:hidden;
+        -webkit-backface-visibility:hidden;
+        text-decoration:none
+    }
+
+    .myReturnButton #cRetour:before{
+        content:"\25b2"
+    }
+    
+    .myReturnButton #cRetour:hover{
+        opacity: 0.5;
+        transition:all ease-in 0.2s
+    }
+    
+    .myReturnButton #cRetour .cInvisible{
+        bottom:-35px;
+        opacity:0;
+        transition:all ease-in 0.5s
+    }
+    
+    .myReturnButton #cRetour .cVisible{
+        bottom:20px;
+        opacity:1
+    }
+
 }
+

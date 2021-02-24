@@ -1,6 +1,7 @@
 //import { Button, Modal } from 'bootstrap';
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom';
+import SocialMedia from './SocialMedia';
 
 const Footer = () => {
 
@@ -13,10 +14,14 @@ const Footer = () => {
 
     return (
         <>
-            <div className="shadow"></div>
+            <div className="shadow">bb</div>
             <footer className="myFooter">
                 <button>Télécharger le CV</button>
-                <span onClick={handleShow}> Mentions légales </span>
+                <div className="myNameFooter">
+                    <p>Paola MBIA MESSI ~ </p>
+                    <span onClick={handleShow}> ~ Mentions légales </span>
+                </div>
+
             </footer>           
         </>
         
