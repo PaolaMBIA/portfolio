@@ -12,8 +12,8 @@ const Nav = () => {
 
     const canvasStyle = {
         position: "absolute",
-        top: "15px",
-        right: "15px"
+        top: "33px",
+        right: "19px"
     };
   
     const menuButtonStyle = {
@@ -45,7 +45,7 @@ const Nav = () => {
             <div className="navigation">
                 <div className="brand-logo">
                     <NavLink to="/"> 
-                        <img id="myLogo" src="./assets/img/logo.png" alt="logo" onClick={() => setOpen(!isOpen)}/>
+                        <img id="myLogo" src="./assets/img/logo.png" alt="logo"/>
                     </NavLink>
                 </div>
                 <ul className="myUl">
@@ -63,11 +63,11 @@ const Nav = () => {
                     <MenuButton
                         isOpen={isOpen}
                         onClick={() => setOpen(!isOpen)}
-                        strokeWidth="3"
+                        strokeWidth="2"
                         color="#05745a"
                         transition={{ ease: "easeOut", duration: 1.2 }}
-                        width="26"
-                        height="10"
+                        width="32"
+                        height="45"
                         style={menuButtonStyle}
                     />
                 </div>

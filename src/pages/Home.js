@@ -1,8 +1,8 @@
 import React from 'react';
 import Apropos from '../components/Apropos';
-import Footer from '../components/Footer';
-import Nav from '../components/Nav';
-import SocialMedia from '../components/SocialMedia';
+// import Footer from '../components/Footer';
+// import Nav from '../components/Nav';
+// import SocialMedia from '../components/SocialMedia';
 
 import { motion } from 'framer-motion';
 

@@ -11,12 +11,11 @@ import Project from "./components/Project";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import MyProject from "./pages/MyProject";
-import test from "./components/test";
 import MentionsLegales from "./pages/MentionsLegales";
 
 function App() {
   return (
-    <>
+    <div className="myTotalApp">
       <Nav/>
       <AnimatePresence>       
           <Switch>
@@ -31,7 +30,7 @@ function App() {
       <div className="myDivFooter">
         <Footer />
       </div>
-    </>
+    </div>
     
   );
 }

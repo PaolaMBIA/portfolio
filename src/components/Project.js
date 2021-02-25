@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { projectsData } from "../data/projectsData";
+import React from "react";
+//import { projectsData } from "../data/projectsData";
 import { motion } from "framer-motion";
 import { useHistory } from 'react-router';
 
@@ -12,8 +12,8 @@ const Project = () => {
   // random background circle
   const history = useHistory();
 
-  let right = -250 + "px";
-  let top = 0 + "px";
+  // let right = -250 + "px";
+  // let top = 0 + "px";
   //let size = "scale(" + (Math.random() + 0.7) + ")";
 
   const variants = {
@@ -38,10 +38,10 @@ const Project = () => {
   let imgX = Math.random() * 100 * plusMinus;
   let imgY = Math.random() * 50 * plusMinus;
 
-  const imgAnim = {
-    enter: { x: 0, opacity: 1, transition },
-    exit: { x: "-100%", opacity: 0, transition }
-  }
+  // const imgAnim = {
+  //   enter: { x: 0, opacity: 1, transition },
+  //   exit: { x: "-100%", opacity: 0, transition }
+  // }
 
   const imgAnim1 = {
     initial: {
@@ -120,25 +120,25 @@ const Project = () => {
     }
   }
 
-    const container = {
-        hidden: { opacity: 1, scale: 0 },
-        visible: {
-          opacity: 1,
-          scale: 1,
-          transition: {
-            delayChildren: 1.5,
-            staggerChildren: 1.2
-          }
-        }
-      }
+  //   const container = {
+  //       hidden: { opacity: 1, scale: 0 },
+  //       visible: {
+  //         opacity: 1,
+  //         scale: 1,
+  //         transition: {
+  //           delayChildren: 1.5,
+  //           staggerChildren: 1.2
+  //         }
+  //       }
+  //     }
         
-      const item = {
-        hidden: { y: 20, opacity: 0 },
-        visible: {
-          y: 0,
-          opacity: 1
-        }
-  }
+  //     const item = {
+  //       hidden: { y: 20, opacity: 0 },
+  //       visible: {
+  //         y: 0,
+  //         opacity: 1
+  //       }
+  // }
   
   const postPreviewVariants = {
     //initial: { x: "100%", opacity: 0 },
@@ -146,10 +146,10 @@ const Project = () => {
     exit: { x: "-100%", opacity: 0, transition }
   };
 
-  const blogVariants = {
-    enter: { transition: { staggerChildren: 0.1 } },
-    exit: { transition: { staggerChildren: 0.1 } }
-  };
+  // const blogVariants = {
+  //   enter: { transition: { staggerChildren: 0.1 } },
+  //   exit: { transition: { staggerChildren: 0.1 } }
+  // };
   
   
   const mySpecifyProject = (id) => {
@@ -226,7 +226,7 @@ const Project = () => {
               <div className="img-container" onClick={() => { mySpecifyProject("mboa237") }}>
                 <span className="myMobile1">
                   <h3>Mboa237</h3>                 
-                  <p><p>React native,</p> <p>firebase</p></p>                 
+                  <p>React native,firebase</p>                 
                 </span>
 
                 <motion.img
@@ -244,23 +244,28 @@ const Project = () => {
           
 
           <div className="myPosts">            
-            <div className="myFirstPosts">    
-              <div className="img-container" onClick={() => { mySpecifyProject("jeunes-entrepreneurs") }}>
+            <div className="myFirstPosts">   
+              <motion.div
+                className="img-container"
+                variants={postPreviewVariants}
+                onClick={() => { mySpecifyProject("Pilotage-cloches") }}
+              >
                 <span>
-                  <h3>Site de jeunes entrepreneurs</h3>                 
-                  <p>WordPress</p>                 
+                  <h3>Pilotage des cloches</h3>                 
+                  <p>HTML5, CSS3, Javascript, esp8266</p>                 
                 </span>
 
                 <motion.img
-                  variants={imgAnim4}
+                  variants={imgAnim1}
                   initial="initial"
                   animate="visible"
-                  transition={{duration: 1.3}}
-                  src="./assets/img/projet-5.PNG"
+                  transition={{ duration: 1 }}
+                  src="./assets/img/htmlEsp8266.JPG"
                   alt="projet1"
                   className="myImg1"
-                />             
-              </div>
+                /> 
+                
+              </motion.div>  
 
               <div className="img-container" onClick={() => { mySpecifyProject("Gestion-dressing") }}>
                 <span>
@@ -304,29 +309,26 @@ const Project = () => {
         </div> 
 
         <div className="myPosts">
-            <div className="myFirstPosts">
-              <motion.div
-                className="img-container"
-                variants={postPreviewVariants}
-                onClick={() => { mySpecifyProject("Pilotage-cloches") }}
-              >
+          <div className="myFirstPosts">
+            <motion.div className="img-container"
+              variants={postPreviewVariants}
+              onClick={() => { mySpecifyProject("jeunes-entrepreneurs") }}
+            >
                 <span>
-                  <h3>Pilotage des cloches</h3>                 
-                  <p>HTML5, CSS3, Javascript, esp8266</p>                 
+                  <h3>Site de jeunes entrepreneurs</h3>                 
+                  <p>WordPress</p>                 
                 </span>
 
                 <motion.img
-                  variants={imgAnim1}
+                  variants={imgAnim4}
                   initial="initial"
                   animate="visible"
-                  transition={{ duration: 1 }}
-                  src="./assets/img/htmlEsp8266.JPG"
+                  transition={{duration: 1.3}}
+                  src="./assets/img/projet-5.PNG"
                   alt="projet1"
                   className="myImg1"
-                /> 
-                
+                />             
               </motion.div>
-
           </div>
           
           <div className="myFirstPosts">

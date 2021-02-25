@@ -1,12 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Resume from './Resume'
 //import Slide from './Slide'
 import SocialMedia from './SocialMedia'
 import { motion } from 'framer-motion';
 
 const Apropos = () => {
-    const [showImage, setShowImage] = useState(true);
+   // const [showImage, setShowImage] = useState(true);
 
     // let array = ["Développeuse","d'applications", "Web", "et mobiles"];
     // let wordIndex = 0;
@@ -51,22 +51,22 @@ const Apropos = () => {
     //   loop();
     // }, []);
 
-    const anim = () => {
-        setShowImage(false);
-        let photoShow = document.querySelector('.myIdentite img');
+    // const anim = () => {
+    //     setShowImage(false);
+    //     let photoShow = document.querySelector('.myIdentite img');
         
 
 
-        photoShow.addEventListener('mouseover', () => {
-            //setShowImage(false);
-            photoShow.style.transform = `rotateY(360deg)`;
-            photoShow.style.transition = `160ms `;
-        })
+    //     photoShow.addEventListener('mouseover', () => {
+    //         //setShowImage(false);
+    //         photoShow.style.transform = `rotateY(360deg)`;
+    //         photoShow.style.transition = `160ms `;
+    //     })
 
-        photoShow.addEventListener('mouseleave', () => {
-            setShowImage(true)
-            photoShow.style.transform = `rotateY(-360deg)`;
-        })
+    //     photoShow.addEventListener('mouseleave', () => {
+    //         setShowImage(true)
+    //         photoShow.style.transform = `rotateY(-360deg)`;
+    //     })
 
         // navlinks.forEach(link => {
         //     link.addEventListener('mouseover', (e) => {
@@ -79,29 +79,29 @@ const Apropos = () => {
         //         link.style.transform = '';
         //     })
         // })
-    }
+    //}
 
-    const variants = {
-        initial: {
-            opacity: 0,
-            transition: { duration: 0.5 },
-            x: 100,
-          },
-          visible: { 
-            opacity: 1,
-            x: 0,
-          },
-          exit: {
-            opacity: 0.4,
-            transition: { duration: 0.35 },
-            x: -800,
-          }
-    };
+    // const variants = {
+    //     initial: {
+    //         opacity: 0,
+    //         transition: { duration: 0.5 },
+    //         x: 100,
+    //       },
+    //       visible: { 
+    //         opacity: 1,
+    //         x: 0,
+    //       },
+    //       exit: {
+    //         opacity: 0.4,
+    //         transition: { duration: 0.35 },
+    //         x: -800,
+    //       }
+    // };
 
-    const transition = {
-        ease: [.03,.87,.73,.9],
-        duration: .9,
-    }
+    // const transition = {
+    //     ease: [.03,.87,.73,.9],
+    //     duration: .9,
+    // }
 
     let plusMinus = Math.random() > 0.4 ? 1 : -1;
     let imgX = Math.random() * 200 * plusMinus;

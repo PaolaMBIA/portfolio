@@ -70,12 +70,12 @@ const MyProject = () => {
     
     return (
       <div className="content1">
-        <button className="myReturnButton" onClick={myReturn}><i class="fas fa-arrow-left"></i>  retour</button>
+        <button className="myReturnButton" onClick={myReturn}><i className="fas fa-arrow-left"></i>  retour</button>
             {
-                resultPost.mySearchPost1.map(e =>
+                resultPost.mySearchPost1.map((e) =>
                     <motion.div
                         className="myResultPostID"
-
+                        key={e.id}
                     >
                         <motion.div
                             className="myProjectDetails"
@@ -92,8 +92,8 @@ const MyProject = () => {
                             </div>
                             <div className="myExplain">
                                 {
-                                    e.infos.map(item =>
-                                        <p className="myInfo">{item}</p>
+                                    e.infos.map((item, index) =>
+                                        <p key={index} className="myInfo">{item}</p>
                                     )
                                 }
                                 

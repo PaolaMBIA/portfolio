@@ -1,7 +1,7 @@
 //import { Button, Modal } from 'bootstrap';
-import React, { useState } from 'react'
+import React from 'react'
 import { useHistory } from 'react-router-dom';
-import SocialMedia from './SocialMedia';
+
 
 const Footer = () => {
 

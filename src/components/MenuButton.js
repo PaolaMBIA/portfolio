@@ -46,7 +46,7 @@ const MenuButton = (_a) => {
         }
     };
     lineProps = Object.assign({ stroke: color, strokeWidth: strokeWidth, vectorEffect: "non-scaling-stroke", initial: "closed", animate: variant, transition }, lineProps);
-    const unitHeight = 4;
+    const unitHeight = 40;
     const unitWidth = (unitHeight * width) / height;
     return (React.createElement(motion.svg, Object.assign({ viewBox: `0 0 ${unitWidth} ${unitHeight}`, overflow: "visible", preserveAspectRatio: "none", width: width, height: height }, props),
         React.createElement(motion.line, Object.assign({ x1: "0", x2: unitWidth, y1: "0", y2: "0", variants: top }, lineProps)),

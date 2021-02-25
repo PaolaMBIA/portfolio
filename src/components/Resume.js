@@ -114,7 +114,7 @@ const Resume = () => {
                         <p>React JS/native</p>
                     </div>
                     <div onMouseOver={anim}>
-                        <img src="https://img.icons8.com/color/100/000000/vue-js.png" alt="vuejs"/>
+                        <img rel="preconnect" src="https://img.icons8.com/color/100/000000/vue-js.png" alt="vuejs"/>
                         <p>Vue JS</p>
                     </div>
                     <div onMouseOver={anim}>
@@ -134,11 +134,11 @@ const Resume = () => {
                         <p>MongoDb</p>
                     </div>
                     <div onMouseOver={anim}>
-                        <img src="https://img.icons8.com/fluent/100/000000/adobe-xd.png" alt="adobeXD"/>
+                        <img rel="preconnect" src="https://img.icons8.com/fluent/100/000000/adobe-xd.png" alt="adobeXD"/>
                         <p>Adobe XD</p>
                     </div>
                     <div onMouseOver={anim}>
-                        <img src="https://img.icons8.com/material-sharp/100/000000/github.png" alt="Github"/>
+                        <img rel="preconnect" src="https://img.icons8.com/material-sharp/100/000000/github.png" alt="Github"/>
                         <p>Github</p>
                     </div>
                 </div>

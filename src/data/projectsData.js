@@ -1,6 +1,6 @@
-import React from 'react';
+//import React from 'react';
 
-import pmMovieHome from "../assets/image/projet-3.png";
+//import pmMovieHome from "../assets/image/projet-3.png";
 import popularMovies from "../assets/image/popularMovies.JPG";
 import similarMovies from "../assets/image/similarMovies.JPG";
 
@@ -20,7 +20,7 @@ import projet3 from "../assets/image/projet-2.jpg";
 
 //site jeune 
 
-import projet4 from "../assets/image/projet-5.PNG";
+//import projet4 from "../assets/image/projet-5.PNG";
 import mims from "../assets/image/mims.png";
 import tiki from "../assets/image/tiki.JPG";
 
@@ -93,16 +93,19 @@ export const projectsData = [
       `Cette application sera plus dans le thème du partage, pour faire évoluer le tourisme. Ainsi, lors de la publication d'un nouveau post, l'utilisateur devra mettre des photos avec un descriptif repondant aux problématiques soulevées.`],
       img: [pageConnexion, pageInscription , pageAccueil, projet3],
       link: "https://github.com/PaolaMBIA/Application-mobile-du-tourisme-au-Cameroun",
-    },
-    {
-      id: "jeunes-entrepreneurs",
-      title: "Site de jeunes entrepreneurs",
-      date: "Juillet 2020",
-      languages: "WordPress",
-      infos:
-        ["Le Cameroun pays d’Afrique, regorge de jeunes entrepreneurs souhaitant se faire connaître sur le plan national comme international. J'ai décidé de faire un site Web regroupant plusieurs bussiness en cours de développement. Pour le moment je met en avant deux jeunes femmes très dynamiques qui se sont lancées dans la fabrication de boissons à base de fruits.",` Mim’s Drink qui présente une variété de boissons 100% naturels et Tiki qui utilise spécialement du jus d’ananas pour faire du vin.`,` Laissez-vous séduire par leurs présentations respectives et surtout n’hésitez pas à partager ou mieux commander des produits de votre choix!!!`],
-      img: [ mims, tiki],
-      link: "http://entrepreneurs.paolambia.fr/entrepreneurs/",
+  },
+  {
+    id: "Pilotage-cloches",
+    title: "Pilotage des cloches",
+    date: "2017 ~ 2019",
+    languages: "HTML5, CSS3, Javascript, esp8266",
+    infos:
+      ["Dans le cadre de mon alternance dans la socièté BODET (leader européen de la mesure et gestion du temps), je devais participer à l'étude et le développement d'un nouveau produit visant à rendre les prêtres connectés.", "L'objectif était de permettre à un prêtre (utilisateur) de piloter les cloches de son église depuis une interface Web (sur sa tablette).", "Pour ce faire, j'ai été amené à :",
+        "- Rechercher des modules (cartes électroniques) pouvant répondre aux attentes et faire un rapport de synthèse;",
+        "- Réaliser l'interface utilisateur en HTML, CSS, Javascript;",
+      '- Vérifier la bonne communication des données "interface utilisateur vers les cloches" via le bus de communication RS485.'],
+    img: [cloches],
+    link: "",
   },
   {
     id: "Gestion-dressing",
@@ -110,7 +113,7 @@ export const projectsData = [
     date: "Janvier 2020 ~ Mars 2020",
     languages: "Vue JS, Arduino",
     infos:
-      ["Dans le cadre du développement d'un projet en interne dans la socièté ADENTIS, j'ai été amené à développer un prototype de boitier à effet sonore pour faciliter le choix de vêtements des personnes malvoyantes. Ces derniers devaient être assistés lors de l'enrégistrement vocal.","Les objectifs étaient de pouvoir : ","- Faire un enrégistrement vocale des descriptifs d'un vêtement sur un tag NFC (qui était ensuite intégré à l'habit);","- Visualiser à l'aide d'une interface Web les vêtements enrégistrés avec une possibilité de modification et de suppression; ","- Prendre en photo les vêtements pour les associer aux notes vocales;","- Rapprocher le boitier vers un habit et écouter l'enrégistrement qui a été fait."],
+      ["Dans le cadre du développement d'un projet en interne dans la socièté ADENTIS, j'ai été amené à développer un prototype de boitier à effet sonore pour faciliter le choix de vêtements des personnes malvoyantes. Ces dernières devaient être assistés lors de l'enrégistrement vocal.","Les objectifs étaient de pouvoir : ","- Faire un enrégistrement vocale des descriptifs d'un vêtement sur un tag NFC (qui était ensuite intégré à l'habit);","- Visualiser à l'aide d'une interface Web les vêtements enrégistrés avec une possibilité de modification et de suppression; ","- Prendre en photo les vêtements pour les associer aux notes vocales;","- Rapprocher le boitier vers un habit et écouter l'enrégistrement qui a été fait."],
     img: [projet5],
     link: "",
   },
@@ -135,18 +138,15 @@ export const projectsData = [
   },
 
   {
-    id: "Pilotage-cloches",
-    title: "Pilotage des cloches",
-    date: "2017 ~ 2019",
-    languages: "HTML5, CSS3, Javascript, esp8266",
+    id: "jeunes-entrepreneurs",
+    title: "Site de jeunes entrepreneurs",
+    date: "Juillet 2020",
+    languages: "WordPress",
     infos:
-      ["Dans le cadre de mon alternance dans la socièté BODET (leader européen de la mesure et gestion du temps), je devais participer à l'étude et le développement d'un nouveau produit visant à rendre les prêtres connectés.", "L'objectif était de permettre à un prêtre (utilisateur) de piloter les cloches de son église depuis une interface Web (sur sa tablette).", "Pour ce faire, j'ai été amené à :",
-        "- Rechercher des modules (cartes électroniques) pouvant répondre aux attentes et faire un rapport de synthèse;",
-        "- Réaliser l'interface utilisateur en HTML, CSS, Javascript;",
-      '- Vérifier la bonne communication des données "interface utilisateur vers les cloches" via le bus de communication RS485.'],
-    img: [cloches],
-    link: "",
-  },
+      ["Le Cameroun pays d’Afrique, regorge de jeunes entrepreneurs souhaitant se faire connaître sur le plan national comme international. J'ai décidé de faire un site Web regroupant plusieurs bussiness en cours de développement. Pour le moment je met en avant deux jeunes femmes très dynamiques qui se sont lancées dans la fabrication de boissons à base de fruits.",` Mim’s Drink qui présente une variété de boissons 100% naturels et Tiki qui utilise spécialement du jus d’ananas pour faire du vin.`,` Laissez-vous séduire par leurs présentations respectives et surtout n’hésitez pas à partager ou mieux commander des produits de votre choix!!!`],
+    img: [ mims, tiki],
+    link: "http://entrepreneurs.paolambia.fr/entrepreneurs/",
+},
 
   {
     id: "site-cv",
