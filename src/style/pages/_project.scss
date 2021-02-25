@@ -177,7 +177,7 @@
   .myImg3, .myImg4{
     height:450px;
    // width:15%;
-    border-radius:10px;
+    border-radius:5px;
     z-index: 0;
     //margin:28px;
   }
@@ -245,7 +245,7 @@
 
   }
 
-  .myLanguage span {
+  .myLanguage .myLanguage {
     color: whitesmoke;
     font-size: 25px;
   }
@@ -294,6 +294,11 @@
     
   }
 
+  .myPeriod{
+    font-size: 18px;
+    color:tomato
+  }
+
   
 .next,
 .prev {
@@ -322,4 +327,491 @@
   transform: scale(-1);
 }
 
+@media (min-width:1024px) and (max-width:1220px){
+  .myImg1, .myImg2{
+    width: 250px;
+  }
+  .myImg2{
+    height: 200px;
+  }
+  .img-container span{
+    width: 250px;
+  }
+  .img-container span h3{
+    font-size: 15px;
+  }
+  .img-container span p{
+    font-size: 12px;
+  }
+}
+
+@media (min-width:1024px) and (max-width:1520px){
+    //////////
+    .myResultPostID{
+      flex-direction: column;
+    }
+  
+    .myProjectDetails{
+      width: auto;
+    }
+    .content1 .myReturnButton{
+      padding: 5px;
+      width: 80px;
+      margin-bottom: 30px;
+    }
+  
+    .myTitle h1{
+      font-size: 30px;
+    }
+  
+    .myTitle a{
+      font-size: 20px;
+    }
+  
+    .myLanguage .myLanguage{
+      font-size: 20px;
+    }
+    .myLanguage .myPeriod{
+      font-size: 15px;
+      color: tomato;
+    }
+    .myInfo{
+      font-size: 19px;
+      line-height: 27px;
+    }
+    .myImages{
+      width: 500px;
+    }
+    .next, .prev{
+      height: 30px;
+      width: 30px;
+    }
+  
+    .prev{
+      left: -60px;
+    }
+    .next{
+      right: -60px;
+    }
+  
+    .myImageProject{
+      align-self: center;
+    }
+  
+    .myImagesAppli{
+      width: 300px;
+    }
+}
+
+@media (min-width:844px) and (max-width:1024px){
+  .myPosts{
+    margin: inherit;
+    width: 90%;
+    
+  }
+  .img-content{
+    flex-direction: column;
+  }
+  .myImg1, .myImg2{
+    width: 250px;
+  }
+
+  .myImg2{
+    height: 200px;
+  }
+
+  .myImg4, .myImg3{
+    //height: 420px;
+  }
+  .img-container span{
+    width: 250px;
+  }
+  .img-container span h3{
+    font-size: 15px;
+  }
+  .img-container span p{
+    font-size: 12px;
+  }
+
+    //////////
+    .myResultPostID{
+      flex-direction: column;
+    }
+  
+    .myProjectDetails{
+      width: auto;
+    }
+    .content1 .myReturnButton{
+      padding: 5px;
+      width: 80px;
+      margin-bottom: 30px;
+    }
+  
+    .myTitle h1{
+      font-size: 30px;
+    }
+  
+    .myTitle a{
+      font-size: 20px;
+    }
+  
+    .myLanguage .myLanguage{
+      font-size: 20px;
+    }
+    .myLanguage .myPeriod{
+      font-size: 15px;
+      color: tomato;
+    }
+    .myInfo{
+      font-size: 19px;
+      line-height: 27px;
+    }
+    .myImages{
+      width: 500px;
+    }
+    .next, .prev{
+      height: 30px;
+      width: 30px;
+    }
+  
+    .prev{
+      left: -60px;
+    }
+    .next{
+      right: -60px;
+    }
+  
+    .myImageProject{
+      align-self: center;
+    }
+  
+    .myImagesAppli{
+      width: 300px;
+    }
+}
+
+@media (min-width:570px) and (max-width:844px){
+  .myPosts{
+    margin: inherit;
+    width: 550px;
+    flex-wrap: wrap;
+    align-self: center;
+  }
+  .img-content{
+    flex-direction: column;
+  }
+  .myImg1, .myImg2{
+    width: 300px;
+  }
+
+  .myImg2{
+    height: 175px;
+  }
+
+  .myImg4, .myImg3{
+    height: 420px;
+  }
+  .img-container span{
+    height: 100px;
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 25px;
+  }
+
+  .img-container .myMobile, .img-container .myMobile1{
+    height: 300px;
+    width: 180px;
+  }
+
+  .img-container span p, .img-container span h3{
+    font-size: 15px;
+  }
+
+  .img-container span p{
+    font-size: 12px;
+  }
+
+  .content1 h2{
+    font-size: 30px;
+  }
+
+  //////////
+  .myResultPostID{
+    flex-direction: column;
+  }
+
+  .myProjectDetails{
+    width: auto;
+  }
+  .content1 .myReturnButton{
+    padding: 5px;
+    width: 80px;
+    margin-bottom: 30px;
+  }
+
+  .myTitle h1{
+    font-size: 20px;
+  }
+
+  .myTitle a{
+    font-size: 15px;
+  }
+
+  .myLanguage .myLanguage{
+    font-size: 18px;
+  }
+  .myLanguage .myPeriod{
+    font-size: 15px;
+    color: tomato;
+  }
+  .myInfo{
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .myImages{
+    width: 400px;
+  }
+  .next, .prev{
+    height: 30px;
+    width: 30px;
+  }
+
+  .prev{
+    left: -50px;
+  }
+  .next{
+    right: -50px;
+  }
+
+  .myImageProject{
+    align-self: center;
+  }
+
+  .myImagesAppli{
+    width: 230px;
+  }
+}
+
+@media (min-width:480px) and (max-width:570px){
+  .myPosts{
+    margin: inherit;
+    width: 420px;
+    flex-wrap: wrap;
+    align-self: center;
+  }
+  .img-content{
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .myImg1, .myImg2{
+    width: 200px;
+  }
+
+  .myImg2{
+    height: 155px;
+  }
+
+  .myImg4, .myImg3{
+    height: 390px;
+  }
+
+  .img-container span{
+    height: 100px;
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 25px;
+  }
+
+  .img-container .myMobile, .img-container .myMobile1{
+    height: 300px;
+    width: 180px;
+  }
+
+  .img-container span p, .img-container span h3{
+    font-size: 15px;
+  }
+
+  .img-container span p{
+    font-size: 12px;
+  }
+
+  .content1 h2{
+    font-size: 30px;
+  }
+
+    //////////
+    .myResultPostID{
+      flex-direction: column;
+    }
+  
+    .myProjectDetails{
+      width: auto;
+    }
+    .content1 .myReturnButton{
+      padding: 5px;
+      width: 80px;
+      margin-bottom: 30px;
+    }
+  
+    .myTitle h1{
+      font-size: 20px;
+    }
+  
+    .myTitle a{
+      font-size: 15px;
+    }
+  
+    .myLanguage .myLanguage{
+      font-size: 18px;
+    }
+    .myLanguage .myPeriod{
+      font-size: 15px;
+      color: tomato;
+    }
+    .myInfo{
+      font-size: 18px;
+      line-height: 25px;
+    }
+    .myImages{
+      width: 360px;
+    }
+    .next, .prev{
+      height: 30px;
+      width: 30px;
+    }
+  
+    .prev{
+      left: -40px;
+    }
+    .next{
+      right: -40px;
+    }
+  
+    .myImageProject{
+      align-self: center;
+    }
+  
+    .myImagesAppli{
+      width: 230px;
+    }
+}
+
+@media (min-width:300px) and (max-width:480px){
+  .myPosts{
+    margin: inherit;
+    width: 360px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .img-content{
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .myImg1, .myImg2{
+    width: 260px;
+    filter:opacity(15%) contrast(150%);
+  }
+
+  .myImg2{
+    height: 195px;
+  }
+
+  .myImg4, .myImg3{
+    height: 330px;
+    filter:opacity(15%) contrast(150%);
+  }
+
+  .img-container span{
+    height: 100px;
+    width: 250px;
+    margin-top: 30px;
+    margin-left: 25px;
+    visibility: visible;
+    align-items: center;
+  }
+
+  .img-container .myMobile, .img-container .myMobile1{
+    height: 300px;
+    width: 150px;
+    visibility: visible;
+    //align-items: center;
+  }
+
+  .img-container span p, .img-container span h3{
+    font-size: 15px;
+  }
+
+  .img-container span p{
+    font-size: 12px;
+    align-self: center;
+  }
+
+  .content1 h2{
+    font-size: 20px;
+  }
+
+  .content1{
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+   // background-color: whitesmoke;
+    //height: max-content;
+  }
+
+  //////////
+  .myResultPostID{
+    flex-direction: column;
+  }
+
+  .myProjectDetails{
+    width: auto;
+  }
+  .content1 .myReturnButton{
+    padding: 5px;
+    width: 80px;
+    margin-bottom: 30px;
+  }
+
+  .myTitle h1{
+    font-size: 18px;
+  }
+
+  .myTitle a{
+    font-size: 12px;
+  }
+
+  .myLanguage .myLanguage{
+    font-size: 15px;
+  }
+  .myLanguage .myPeriod{
+    font-size: 12px;
+    color: tomato;
+  }
+  .myInfo{
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .myImages{
+    width: 260px;
+  }
+  .next, .prev{
+    height: 30px;
+    width: 30px;
+  }
+
+  .prev{
+    left: -20px;
+  }
+  .next{
+    right: -20px;
+  }
+
+  .myImageProject{
+    align-self: center;
+  }
+
+  .myImagesAppli{
+    width: 180px;
+  }
+}
 

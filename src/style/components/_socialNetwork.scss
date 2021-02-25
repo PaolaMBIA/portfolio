@@ -6,7 +6,7 @@
   display: flex;
 
   @media screen and (max-width: 650px){
-    width: 30%;
+    width: 20%;
   }
 
   ul {
@@ -32,5 +32,12 @@
   .content a li{
     color: $color-7;
   }
+
+  @media (min-width:300px) and (max-width:710px){
+    font-size: 1.5rem;
+    align-self: center;
+  }
+
+
 
 }

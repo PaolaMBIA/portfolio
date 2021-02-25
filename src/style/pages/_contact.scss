@@ -14,7 +14,7 @@
 }
 
 .mySend img{
-  width: 300px;
+  width: 270px;
   align-self: center;
 }
 
@@ -31,7 +31,7 @@
   background-color: $color-1;
   
   position: relative;
-  width: 800px;
+  width: 600px;
   height: 550px;
   border: 2px solid transparent;
   border-radius: 10px;
@@ -139,6 +139,124 @@ iframe{
   left: 0;
   //transform-origin: 50% 50%;
 }
+
+@media (min-width:300px) and (max-width:480px){
+  .mySend img{
+    display: none;
+  }
+  .content3 .contact-form{
+    width: 260px;
+  }
+  .mySend{
+    width: 0;
+  }
+  .content3 .myTitleContact{
+    font-size: 20px;
+  }
+  .content3 .contact-form .form-content input, .content3 .contact-form .form-content textarea{
+    width: 240px;
+    padding: 10px;
+  }
+  .myForm{
+    width: auto;
+  }
+  .content3 .contact-form .button{
+    bottom: 90px;
+    right: 12px;
+  }
+  .content3{
+    justify-content: center;
+  }
+}
+
+@media (min-width:480px) and (max-width:710px){
+  .mySend img{
+    display: none;
+  }
+  .content3 .contact-form{
+    width: 400px;
+  }
+  .mySend{
+    width: 0;
+  }
+  .content3 .myTitleContact{
+    font-size: 20px;
+  }
+  .content3 .contact-form .form-content input, .content3 .contact-form .form-content textarea{
+    width: 340px;
+    padding: 15px;
+  }
+  .myForm{
+    width: auto;
+  }
+  .content3 .contact-form .button{
+    bottom: 90px;
+    right: 12px;
+  }
+  .content3{
+    justify-content: center;
+  }
+}
+
+@media (min-width:710px) and (max-width:991px){
+  .mySend img{
+    display: none;
+  }
+  .content3 .contact-form{
+    width: 500px;
+  }
+  .mySend{
+    width: 0;
+  }
+  .content3 .myTitleContact{
+    font-size: 20px;
+  }
+  .content3 .contact-form .form-content input, .content3 .contact-form .form-content textarea{
+    width: 340px;
+    padding: 15px;
+  }
+  .myForm{
+    width: auto;
+  }
+  .content3 .contact-form .button{
+    bottom: 90px;
+    right: 12px;
+  }
+  .content3{
+    justify-content: center;
+  }
+}
+
+@media (min-width:991px) and (max-width:1024px){
+  .mySend img{
+    width: 250px;
+  }
+  .mySend{
+    width: 280px;
+  }
+  .content3 .contact-form{
+    width: 500px;
+  }
+  .content3 .myTitleContact{
+    font-size: 20px;
+  }
+  .content3 .contact-form .form-content input, .content3 .contact-form .form-content textarea{
+    width: 340px;
+    padding: 15px;
+  }
+  .myForm{
+    width: auto;
+  }
+  .content3 .contact-form .button{
+    bottom: 90px;
+    right: 12px;
+  }
+  .content3{
+    justify-content: space-evenly;
+  }
+}
+
+
 
 //   .contact-form {
 //     margin-top: 210px;

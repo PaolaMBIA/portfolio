@@ -18,7 +18,7 @@ function App() {
   return (
     <>
       <Nav/>
-        <AnimatePresence>
+      <AnimatePresence>       
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/projets" component={Project} />

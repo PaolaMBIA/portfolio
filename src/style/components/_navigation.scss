@@ -82,7 +82,7 @@
     //visibility: visible;
   }
 
-  @media screen and (max-width: 991px){
+  @media screen and (max-width: 1024px){
     .myUl{
       display: none;
     }
@@ -91,4 +91,17 @@
       display: block;
     }
   }
+
+  @media (min-width:300px) and (max-width:480px){
+    &:before {
+
+      height: 50px;
+  
+    }
+    #myLogo{
+      width: 120px;
+      justify-self: center;
+    }
+  }
 }
+

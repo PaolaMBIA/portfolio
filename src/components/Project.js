@@ -333,11 +333,11 @@ const Project = () => {
               <motion.div
                 className="img-container"
                 variants={postPreviewVariants}
-                onClick={() => { mySpecifyProject("cvWeb") }}
+                onClick={() => { mySpecifyProject("site-cv") }}
               >
                 <span>
-                  <h3>CV Web</h3>                 
-                  <p>React JS</p>                 
+                  <h3>Site CV</h3>                 
+                  <p>React JS, Sass</p>                 
                 </span>
 
                 <motion.img

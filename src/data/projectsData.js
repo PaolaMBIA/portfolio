@@ -149,15 +149,12 @@ export const projectsData = [
   },
 
   {
-    id: "cvWeb",
-    title: "CV Web",
+    id: "site-cv",
+    title: "Site CV",
     date: "2021",
-    languages: "React JS",
+    languages: "React JS, Sass",
     infos:
-      ["Dans le cadre de mon alternance dans la socièté BODET (leader européen de la mesure et gestion du temps), je devais participer à l'étude et le développement d'un nouveau produit visant à rendre les prêtres connectés.", "L'objectif était de permettre à un prêtre (utilisateur) de piloter les cloches de son église depuis une interface Web (sur sa tablette).", "Pour ce faire, j'ai été amené à :",
-        "- Rechercher des modules (cartes électroniques) pouvant répondre aux attentes et faire un rapport de synthèse;",
-        "- Réaliser l'interface utilisateur en HTML, CSS, Javascript;",
-      '- Vérifier la bonne communication des données "interface utilisateur vers les cloches" via le bus de communication RS485.'],
+      ["J'ai réalisé mon site CV mettant en avant quelques compétences acquises en REACT JS. J'utilise également SASS pour ma feuille de style."],
     img: [cvWeb],
     link: "",
   },

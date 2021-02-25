@@ -86,7 +86,7 @@ const MyProject = () => {
                         >
                             <div className="myTitle">
                                 <h1>{e.title}</h1>
-                        <p className="myLanguage"><span>{e.languages}</span> <span style={{fontSize:"18px", color:"tomato"}}>_{ e.date}</span></p>
+                        <p className="myLanguage"><span className="myLanguage">{e.languages}</span> <span className="myPeriod">_{ e.date}</span></p>
                                 <a href={e.link} target="_blank" rel="noreferrer" >{e.link}</a>
                                 
                             </div>

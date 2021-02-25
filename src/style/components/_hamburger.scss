@@ -1,0 +1,38 @@
+.myHamburgerMenu{
+    background-color: $color-8;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    margin-top: 80px;
+
+    @media (min-width:300px) and (max-width:480px){
+        margin-top: 50px;
+    }
+
+    .myUlHamburger{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        //background-color: whitesmoke;
+        height: 200px;
+        margin-top: 25px;
+        align-items: center;
+
+        li{
+            color: $color-6;
+            font-size: 30px;
+        }
+
+        .nav-active {
+            color: $black;
+        }
+
+        ul:hover li:not(:hover) {
+            opacity: .5;
+          }
+          ul:hover li:hover {
+            color: $black;
+          }
+    }
+}

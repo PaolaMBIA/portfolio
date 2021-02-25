@@ -138,10 +138,10 @@ const Apropos = () => {
                 } */}
                 <div className="titre" >
                     <motion.h2>Paola MBIA MESSI</motion.h2>
-            <motion.h3>
-              {/* <span id="text-target"></span> */}
-              Développeuse d'applications Web <img src="https://img.icons8.com/emoji/100/000000/laptop-emoji.png" alt="ordinateur" style={{ width: "31px", marginBottom:"-5px" }}/> et mobiles <img src="https://img.icons8.com/emoji/100/000000/mobile-phone.png" alt="telephone" style={{ width: "31px", marginBottom:"-5px" }}/>
-            </motion.h3>
+                    <motion.h3>
+                    {/* <span id="text-target"></span> */}
+                    Développeuse d'applications Web <img src="https://img.icons8.com/emoji/100/000000/laptop-emoji.png" alt="ordinateur" style={{ width: "31px", marginBottom:"-5px" }}/> et mobiles <img src="https://img.icons8.com/emoji/100/000000/mobile-phone.png" alt="telephone" style={{ width: "31px", marginBottom:"-5px" }}/>
+                    </motion.h3>
                     <SocialMedia/>
                 </div>
             </motion.div>
