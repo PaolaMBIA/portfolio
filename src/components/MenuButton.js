@@ -49,8 +49,8 @@ const MenuButton = (_a) => {
     const unitHeight = 40;
     const unitWidth = (unitHeight * width) / height;
     return (React.createElement(motion.svg, Object.assign({ viewBox: `0 0 ${unitWidth} ${unitHeight}`, overflow: "visible", preserveAspectRatio: "none", width: width, height: height }, props),
-        React.createElement(motion.line, Object.assign({ x1: "0", x2: unitWidth, y1: "0", y2: "0", variants: top }, lineProps)),
-        React.createElement(motion.line, Object.assign({ x1: "0", x2: unitWidth, y1: "2", y2: "2", variants: center }, lineProps)),
-        React.createElement(motion.line, Object.assign({ x1: "0", x2: unitWidth, y1: "4", y2: "4", variants: bottom }, lineProps))));
+        React.createElement(motion.line, Object.assign({ x1: "0", x2: unitWidth, y1: "0", y2: "0" }, lineProps)),
+        React.createElement(motion.line, Object.assign({ x1: "0", x2: unitWidth, y1: "4", y2: "4" }, lineProps)),
+        React.createElement(motion.line, Object.assign({ x1: "0", x2: unitWidth, y1: "8", y2: "8" }, lineProps))));
 };
 export { MenuButton };

@@ -182,11 +182,11 @@ const Project = () => {
               <motion.div
                 className="img-container"
                 variants={postPreviewVariants}
-                onClick={() => { mySpecifyProject("schitt-cafe") }}
+                onClick={() => { mySpecifyProject("remotab") }}
               >
                 <span>
-                  <h3>Schitt's Creek Cafe Tropical</h3>                 
-                  <p>React JS, Node JS, MongoDB</p>                 
+                  <h3>Remotab</h3>                 
+                  <p>React JS, TypeScript, GraphQL, Material UI, Neumorphism, MongoDB</p>                 
                 </span>
 
                 <motion.img
@@ -194,7 +194,7 @@ const Project = () => {
                   initial="initial"
                   animate="visible"
                   transition={{ duration: 1 }}
-                  src="./assets/img/projet-1.PNG"
+                  src="./assets/img/connexion.png"
                   alt="projet1"
                   className="myImg1"
                 /> 
@@ -203,11 +203,11 @@ const Project = () => {
 
               <motion.div
                 className="img-container"
-                onClick={() => { mySpecifyProject("PM-movies") }}
+                onClick={() => { mySpecifyProject("ido") }}
               >
                 <span>
-                  <h3>PM movies</h3>                 
-                  <p>React JS, API The movies database</p>                 
+                  <h3>Conception Web</h3>                 
+                  <p>Gatsby, React JS, React native, GraphQL, Auth0</p>                 
                 </span>
 
                 <motion.img
@@ -215,7 +215,7 @@ const Project = () => {
                   initial="initial"
                   animate="visible"
                   transition={{duration: 1.1}}
-                  src="./assets/img/projet-3.PNG"
+                  src="./assets/img/ido.jpg"
                   alt="projet1"
                   className="myImg2"
                 />  
@@ -310,24 +310,49 @@ const Project = () => {
 
         <div className="myPosts">
           <div className="myFirstPosts">
-            <motion.div className="img-container"
-              variants={postPreviewVariants}
-              onClick={() => { mySpecifyProject("jeunes-entrepreneurs") }}
-            >
+          <motion.div
+                className="img-container"
+                variants={postPreviewVariants}
+                onClick={() => { mySpecifyProject("schitt-cafe") }}
+              >
                 <span>
-                  <h3>Site de jeunes entrepreneurs</h3>                 
-                  <p>WordPress</p>                 
+                  <h3>Schitt's Creek Cafe Tropical</h3>                 
+                  <p>React JS, Node JS, MongoDB</p>                 
                 </span>
 
                 <motion.img
-                  variants={imgAnim4}
+                  variants={imgAnim1}
+                  initial="initial"
+                  animate="visible"
+                  transition={{ duration: 1 }}
+                  src="./assets/img/projet-1.PNG"
+                  alt="projet1"
+                  className="myImg1"
+                /> 
+                
+              </motion.div>
+          </div>
+
+          <div className="myFirstPosts">
+          <motion.div
+              className="img-container"
+              variants={postPreviewVariants}
+              onClick={() => { mySpecifyProject("PM-movies") }}
+          >
+                <span>
+                  <h3>PM movies</h3>                 
+                  <p>React JS, API The movies database</p>                 
+                </span>
+
+                <motion.img
+                  variants={imgAnim2}
                   initial="initial"
                   animate="visible"
                   transition={{duration: 1.3}}
-                  src="./assets/img/projet-5.PNG"
+                  src="./assets/img/projet-3.PNG"
                   alt="projet1"
-                  className="myImg1"
-                />             
+                  className="myImg2"
+                />  
               </motion.div>
           </div>
           

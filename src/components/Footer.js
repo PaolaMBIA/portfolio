@@ -16,7 +16,7 @@ const Footer = () => {
         <>
             <div className="shadow">bb</div>
             <footer className="myFooter">
-                <button>Télécharger le CV</button>
+                <button><a title="cv" target="_blank" rel="noopener"  href="./assets/CV_Paola_MBIA_Developpeuse_Web_&_Web_mobile.pdf">Télécharger le CV</a></button>
                 <div className="myNameFooter">
                     <p>Paola MBIA MESSI ~ </p>
                     <span onClick={handleShow}> ~ Mentions légales </span>

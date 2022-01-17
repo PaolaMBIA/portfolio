@@ -6,9 +6,9 @@ import { motion } from 'framer-motion';
 const Resume = () => {
     
     const anim = () => {
-        let navlinks = document.querySelectorAll('.mySkillsImage div');
+        let icon = document.querySelectorAll('.mySkillsImage div');
 
-        navlinks.forEach(link => {
+        icon.forEach(link => {
             link.addEventListener('mouseover', (e) => {
                 let attrX = e.offsetX - 20;
                 let attrY = e.offsetY - 13;
@@ -80,9 +80,13 @@ const Resume = () => {
                 <div className="myBlockResume2">            
                     <div className="myStory">
                         <h4>Ma passion?</h4>
-                        <span>Je suis direct devenue amoureuse <img src="https://img.icons8.com/emoji/48/000000/smiling-face-with-heart-eyes.png" alt="coeur" style={{ width: "30px", marginBottom:"-5px" }} /> des <strong style={{ color: "#05745a" }}>technologies du Web</strong>. En Mars 2020, j'ai suivi une formation professionnalisante de <strong style={{ color: "#05745a" }}>développeur .Net</strong> dans l'optique de pouvoir approfondir la liaison qu'il y'a entre l'orienté objet et Web. J'ai pu acquérir des compétences dans l'architecte MVC. A la suite j'ai enchaîné sur une formation de <strong style={{ color: "#05745a" }}>développeur Web et Web mobile</strong> pour acquerir plus de connaissances.
+                        <span>Je suis direct devenue amoureuse <img src="https://img.icons8.com/emoji/48/000000/smiling-face-with-heart-eyes.png" alt="coeur" style={{ width: "30px", marginBottom:"-5px" }} /> des <strong style={{ color: "#05745a" }}>technologies du Web</strong>. En Mars 2020, j'ai suivi une formation professionnalisante de <strong style={{ color: "#05745a" }}>développeur .Net</strong> dans l'optique de pouvoir approfondir la liaison qu'il y'a entre l'orienté objet et Web. J'ai pu acquérir des compétences dans l'architecture MVC. A la suite j'ai enchaîné sur une formation de <strong style={{ color: "#05745a" }}>développeur Web et Web mobile</strong> pour acquerir plus de connaissances.
                         <br /><br />
-                        A ce jour, j'ai réalisé plusieurs <NavLink to="/projets" exact className="hover">projets</NavLink> et je n'arrête pas tellement c'est hyper intéressant. J'ai réellement trouvé mon épanouissement tant bien professionnel que personnel.<br /><br />
+                        
+                        J'ai réalisé plusieurs <NavLink to="/projets" exact className="hover">projets</NavLink>, dont un principalement pour un restaurant au Canada. J'ai réellement trouvé mon épanouissement tant bien professionnel que personnel.<br /><br />
+                            
+                        Actuellement je suis en CDD chez <strong style={{color:"#05745a"}}>IDO-DATA</strong> depuis Mars 2021.<br /><br />
+                            
                         Ci-dessous vous pourrez voir mes compétences acquises jusqu'à ce jour. Et ce n'est que le début <img src="https://img.icons8.com/emoji/100/000000/flexed-biceps.png" alt="bras" style={{ width: "30px", marginBottom:"-5px" }}/> </span>
                     </div>
                     <div className="myBlockResuImage"  onMouseOver={animImage}>
@@ -118,12 +122,24 @@ const Resume = () => {
                         <p>Vue JS</p>
                     </div>
                     <div onMouseOver={anim}>
-                        <img src="./assets/img/icons8-ionic.svg" alt="ionic" />
-                        <p>Ionic</p>
-                    </div>
-                    <div onMouseOver={anim}>
                         <img src="./assets/img/icons8-nodejs.svg" alt="nodejs" />
                         <p>Node JS</p>
+                    </div>
+                    <div onMouseOver={anim}>
+                        <img src="./assets/img/icons8-graphql.svg" alt="nodejs" />
+                        <p>GraphQL</p>
+                    </div>
+                    <div onMouseOver={anim}>
+                        <img src="./assets/img/icons8-gatsbyjs.svg" alt="nodejs" />
+                        <p>Gatsby</p>
+                    </div>
+                    <div onMouseOver={anim}>
+                        <img src="./assets/img/icons8-sass.svg" alt="nodejs" />
+                        <p>Sass</p>
+                    </div>
+                    <div onMouseOver={anim}>
+                        <img src="./assets/img/icons8-ionic.svg" alt="ionic" />
+                        <p>Ionic</p>
                     </div>
                     <div onMouseOver={anim}>
                         <img src="./assets/img/icons8-firebase.svg" alt="firebase" />
