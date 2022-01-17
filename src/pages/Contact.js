@@ -158,9 +158,6 @@ const Contact = () => {
           />
         </div>
         <div className="form-message"></div>
-        <div className="myGif">
-          <iframe title="send" src="https://giphy.com/embed/jwXoaQKjk9L1i8btPi" ></iframe>
-        </div>
       </motion.form>
       <motion.div
         className="mySend"

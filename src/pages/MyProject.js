@@ -86,8 +86,7 @@ const MyProject = () => {
                         >
                             <div className="myTitle">
                                 <h1>{e.title}</h1>
-                        <p className="myLanguage"><span className="myLanguage">{e.languages}</span> <span className="myPeriod">_{ e.date}</span></p>
-                                <a href={e.link} target="_blank" rel="noreferrer" >{e.link}</a>
+                        <p className="myLanguage"><span className="myLanguage1">{e.languages}</span> <span className="myPeriod">_{ e.date}</span></p>
                                 
                             </div>
                             <div className="myExplain">
@@ -95,7 +94,8 @@ const MyProject = () => {
                                     e.infos.map((item, index) =>
                                         <p key={index} className="myInfo">{item}</p>
                                     )
-                                }
+                        }
+                         <a href={e.link} target="_blank" rel="noreferrer" >{e.link}</a>
                                 
                             </div>
                         </motion.div>

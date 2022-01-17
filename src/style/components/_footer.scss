@@ -42,8 +42,12 @@
             height: 30px;
             width: 250px;
             background-color: $color-8;
-            color: $color-6;
+            
             font-size: 20px;
+        }
+
+        button a{
+            color: $color-6;
         }
     
         button:hover{

@@ -221,7 +221,7 @@
     margin-bottom: 40px;
   }
 
-  .myTitle a{
+  .myExplain a{
     color: rgb(212, 135, 34);
     font-size: 18px;
     
@@ -231,7 +231,7 @@
     margin-bottom: 10px;
   }
 
-  .myTitle a:hover{
+  .myExplain a:hover{
     opacity: 0.6;
   }
 
@@ -243,10 +243,13 @@
   }
 
   .myLanguage{
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
   }
 
-  .myLanguage .myLanguage {
+  .myLanguage .myLanguage1 {
     color: whitesmoke;
     font-size: 25px;
   }
@@ -369,7 +372,7 @@
       font-size: 20px;
     }
   
-    .myLanguage .myLanguage{
+    .myLanguage .myLanguage1{
       font-size: 20px;
     }
     .myLanguage .myPeriod{
@@ -456,7 +459,7 @@
       font-size: 20px;
     }
   
-    .myLanguage .myLanguage{
+    .myLanguage .myLanguage1{
       font-size: 20px;
     }
     .myLanguage .myPeriod{
@@ -774,26 +777,26 @@
   }
 
   .myTitle h1{
-    font-size: 18px;
+    font-size: 24px;
   }
 
   .myTitle a{
     font-size: 12px;
   }
 
-  .myLanguage .myLanguage{
-    font-size: 15px;
+  .myLanguage .myLanguage1{
+    font-size: 17px;
   }
   .myLanguage .myPeriod{
-    font-size: 12px;
+    font-size: 13px;
     color: tomato;
   }
   .myInfo{
-    font-size: 15px;
+    font-size: 17px;
     line-height: 20px;
   }
   .myImages{
-    width: 260px;
+    width: 300px;
   }
   .next, .prev{
     height: 30px;
@@ -801,10 +804,10 @@
   }
 
   .prev{
-    left: -20px;
+    left: -30px;
   }
   .next{
-    right: -20px;
+    right: -30px;
   }
 
   .myImageProject{

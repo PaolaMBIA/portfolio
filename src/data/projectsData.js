@@ -39,6 +39,22 @@ import projet6 from "../assets/image/projet-4.jpeg";
 import accueil from "../assets/image/accueil.jpeg";
 import recettes from "../assets/image/recettes.jpeg";
 
+//remotab
+
+import connex from "../assets/image/connexion.png";
+import homeChoice from "../assets/image/homeChoice.JPG";
+import homeStudent from "../assets/image/homeStudent.JPG";
+import infoStudent from "../assets/image/infoStudent.JPG";
+import validFormulaire from "../assets/image/validFormulaire.JPG";
+import agenda from "../assets/image/agenda.JPG";
+import classes from "../assets/image/classes.JPG";
+import trombinoscope from "../assets/image/trombinoscope.JPG";
+
+//remotab
+
+import ido from "../assets/image/idoData.jpg";
+
+
 export const projectsData = [
 
     {
@@ -47,7 +63,7 @@ export const projectsData = [
       date: "Novembre 2020 ~ Janvier 2021",
       languages: "React, Node JS, MongoDB",
       infos:
-        [`Dans le cadre d’une amélioration du service de restauration d'un Cafe au Canada, il etait question de faire la création d’une API et des outils bien conçus pour s’assurer que les serveurs ne mélangent pas les commandes des différents clients.`,
+        [`Dans le cadre de l'amélioration du service de restauration d'un Cafe, il etait question de faire la création d’une API et des outils bien conçus pour s’assurer que les serveurs ne mélangent pas les commandes des différents clients.`,
         "Cette API devait stocker les informations des clients, les commandes de ces derniers, les éléments disponibles dans le menu et les différents commentaires des clients.",
         
         `On devait donc pouvoir :`,`
@@ -60,7 +76,60 @@ export const projectsData = [
       ],
       img: [addCustomer, totalBill, stat, median, mongoDB ],
       link: "https://github.com/PaolaMBIA/Schitt_Creek_Cafe_Tropical",
-    },
+  },
+  {
+    id: "remotab",
+    title: "Application web pour des cours",
+    date: "Avril 2021 ~ à maintenant",
+    languages: "React JS, TypeScript, GraphQL, Material UI, Neumorphism, MongoDB",
+    infos:
+      [`Suite à la difficulté de suivre des cours à distance à cause de la situation COVID, nous (équipe de 5 personnes) avons débuté la conception d'une application Web qui permettra d'avoir des paramètres adaptés pour facilité le partage des cours principalement pour les collégiens et lycéens`,
+      
+      `En tant qu'élève, je devrais donc pouvoir :`,`
+      - Me connecter et accéder directement à sa classe ;`,`
+      - Accéder à mon emploi du temps ;`,`
+      - Accéder à la classe en visio ;`,`
+      - Communiquer avec toute la classe en public ou en privé.
+      `,
+
+      `En tant que professeur, je devrais donc pouvoir :`,`
+      - Me connecter et accéder directement à la classe prévu pour l'heure ;`,`
+      - Accéder à mon emploi du temps ;`,`
+      - Accéder au trombinoscope des élèves par classe ;`,`
+      - Accéder au paramètre de mon compte ;`,`
+      - Sélectionner un élève de façon aléatoire ;`,`
+      - Partager mon écran ;`,
+
+      `En tant que vie scolaire, je devrais donc pouvoir :`,`
+      - Me connecter et accéder aux différents paramètres;`,`
+      - Gérer l'ensemble des classes;`,`
+      - Gérer les élèves ;`,`
+      - Gérer les professeurs
+      `,
+    ],
+    img: [connex , agenda, classes ,  trombinoscope, homeChoice, homeStudent, infoStudent, validFormulaire  ],
+  },
+  {
+    id: "ido",
+    title: "Développement d'applications Web",
+    date: "Mars 2021 ~ à maintenant",
+    languages: "Gatsby, React JS, React native, GraphQL, Auth0",
+    infos:
+      [`Dans le cadre de mon CDD chez Ido-data, je participe à la conception et au développement des applications Web et mobiles`,
+
+      
+      `Les projets sur lesquelles j'ai travaillé jusqu'à présent ont porté sur : `,`
+      - Le développement Front-End (framework Gatsby) avec manipulation de données ;`,`
+      - La communication avec la base de données (stockée sur AWS) en utilisant du Graphql ;`,`
+      - L'ajout des moyens de paiements en ligne (avec Stripe) ;`,`
+      - L'ajout de l'authentification via les réseaux sociaux (Auth0)
+      `,`
+      - Mise à jour des fonctionnalités de l'application mobile (sur React native)
+      `,
+      ],
+      img: [ido ],
+    link: "https://ido-data.fr/",
+  },
     {
       id: "PM-movies",
       title: "PM movies",
@@ -75,7 +144,7 @@ export const projectsData = [
           `- Communiquer avec la base de données TMDB (The Movie Database).`
         ],
       img: [ popularMovies, similarMovies],
-      link: "https://paolambia.fr/",
+      link: "https://github.com/PaolaMBIA/PM-movies",
     },
   {
     id: "mboa237",
@@ -156,6 +225,6 @@ export const projectsData = [
     infos:
       ["J'ai réalisé mon site CV mettant en avant quelques compétences acquises en REACT JS. J'utilise également SASS pour ma feuille de style."],
     img: [cvWeb],
-    link: "",
+    link: "https://paolambia.fr/",
   },
   ];

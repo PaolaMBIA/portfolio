@@ -4,7 +4,7 @@ import { MenuButton } from './MenuButton';
 
 import { motion } from 'framer-motion';
 
-const transition = { duration: 1.1, ease: "easeInOut" };
+const transition = { duration: 0.8, ease: "easeInOut" };
 //import logo from ''
 
 const Nav = () => {
@@ -12,7 +12,7 @@ const Nav = () => {
 
     const canvasStyle = {
         position: "absolute",
-        top: "33px",
+        top: "23px",
         right: "19px"
     };
   
